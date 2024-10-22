@@ -88,6 +88,7 @@ window#waybar.hidden {
 }
 
 #custom-settings,
+#custom-github,
 #custom-chatgpt {
 	margin-top: 3px;
 	margin-left: 4px;
