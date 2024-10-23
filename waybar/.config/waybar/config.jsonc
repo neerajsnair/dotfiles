@@ -89,7 +89,7 @@
 
   "custom/github": {
     "format": "",
-    "on-click": "chromium --incognito --app=https://www.github.com",
+    "on-click": "chromium --incognito --app=https://www.github.com/login",
     "tooltip-format": "Github"
   },
 
