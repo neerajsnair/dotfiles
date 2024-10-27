@@ -20,6 +20,7 @@ hyprgui (config editor for hyprland)
 swaync, libnotify (autostart swaync as it is a daemon)
 stow
 python-pywal16 (aur)
+waypaper (frontend for swww, hyprpaper etc)
 
 
 
