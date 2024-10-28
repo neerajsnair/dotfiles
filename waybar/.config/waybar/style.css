@@ -74,7 +74,6 @@ window#waybar.hidden {
 	text-shadow: inherit;
 	color: @color6;
 	opacity: 1.0;
-  	transition: transform 0.3s ease;
 }
 
 #custom-expand {
