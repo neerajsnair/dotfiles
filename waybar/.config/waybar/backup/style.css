@@ -64,12 +64,15 @@ window#waybar.hidden {
 	animation: fadeIn 5s ease-in;
 }
 
-#workspaces button.hover {
+#workspaces button.active:hover {
+  color: @background;
+}
+
+#workspaces button:hover {
 	transition: none;
 	box-shadow: inherit;
 	text-shadow: inherit;
-	color: @background;
-	color: @foreground;
+	color: @color6;
 	opacity: 1.0;
 }
 
@@ -88,6 +91,7 @@ window#waybar.hidden {
 }
 
 #custom-settings,
+#custom-github,
 #custom-chatgpt {
 	margin-top: 3px;
 	margin-left: 4px;
@@ -117,6 +121,17 @@ window#waybar.hidden {
 	color: @foreground;
 	background: @background;
 	opacity: 1.0;
+}
+
+#custom-settings:hover,
+#custom-github:hover,
+#custom-chatgpt:hover {
+/*#battery:hover,*/
+/*#clock:hover,*/
+/*#pulseaudio:hover,*/
+/*#custom-notification:hover,*/
+/*#backlight:hover{*/
+	color: @color6;
 }
 
 #battery.charging, #battery.plugged {

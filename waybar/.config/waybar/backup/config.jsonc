@@ -71,8 +71,8 @@
     "modules": [
         "custom/expand",
         "custom/settings", // First element is the "group leader" and won't ever be hidden
+        "custom/github",
         "custom/chatgpt",
-        "custom/chrome",
     ]
   },
 
@@ -85,6 +85,12 @@
     "format": "",
     "on-click": "hyprgui",
     "tooltip-format": "Settings"
+  },
+
+  "custom/github": {
+    "format": "",
+    "on-click": "chromium --incognito --app=https://www.github.com/login",
+    "tooltip-format": "Github"
   },
 
   "custom/chatgpt": {
