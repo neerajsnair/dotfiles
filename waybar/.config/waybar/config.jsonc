@@ -62,8 +62,8 @@
   "group/hidden": {
     "orientation": "inherit",
     "drawer": {
-        "transition-duration": 200,
-        "click-to-reveal": true,
+        "transition-duration": 300,
+        "click-to-reveal": false,
         "children-class": "not-power",
         "transition-left-to-right": true,
     },
@@ -121,18 +121,20 @@
   "battery": {
     "states": {
       // "good": 95,
-      "warning": 30,
-      "critical": 15
+      "warning": 20,
+      "critical": 10
     },
 
     "format": "{capacity}% {icon}",
     "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
+    "format-charging": "{capacity}% 󰂄",
+    "format-plugged": "{capacity}% 󰂄",
     "format-alt": "{time} {icon}",
+    "format-critical": "{capacity}% 󰂃",
     //"format-good": "", // An empty format will hide the module
     // "format-full": "",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "interval": 1
   },
 
   "network": {
@@ -149,7 +151,7 @@
     "tooltip-format": "Volume Control",
     "scroll-step": 5,
     "format": "{icon} {volume}%",
-    "format-muted": " Muted",
+    "format-muted": "  Muted",
     "on-click":"wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "on-click-right":"pkill pavucontrol || pavucontrol",
     "format-icons": {
