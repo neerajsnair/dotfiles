@@ -36,6 +36,7 @@
     "format" : "",                                  //
     "tooltip-format": "App Menu",
     "on-click":"pkill rofi || rofi -show drun",
+    "on-click-right":"hyprctl dispatch overview:toggle",
     "escape": true,
   },
 
