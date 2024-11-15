@@ -111,18 +111,32 @@ window#waybar.hidden {
 #battery,
 #clock,
 #pulseaudio,
-#custom-notification,
+/*#custom-notification,*/
 #backlight {
 	margin-top: 3px;
 	margin-left: 0px;
 	padding-left: 8px;
-	padding-right: 12px;
+	padding-right: 8px;
 	margin-bottom: 3px;
 	border: 1px solid @color6;
 	transition: none;
 	color: @foreground;
 	background: @background;
 	opacity: 1.0;
+}
+
+#custom-notification {
+margin-top: 3px;
+margin-left: 0px;
+padding-left: 8px;
+padding-right: 12px;
+margin-bottom: 3px;
+font-size: 16;
+border: 1px solid @color6;
+transition: none;
+color: @foreground;
+background: @background;
+opacity: 1.0;
 }
 
 #custom-settings:hover,
@@ -198,7 +212,7 @@ window#waybar.hidden {
 	margin-left: 0px;
 	margin-right: 4px;
 	padding-left: 8px;
-	padding-right: 12px;
+	padding-right: 13px;
 	margin-bottom: 3px;
 	border: 1px solid @color6;
 	transition: none;
