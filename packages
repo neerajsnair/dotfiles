@@ -1,3 +1,4 @@
+xorg-xhost (extremely important. apps thta need elevated privileges wont launch from gui)
 tldr
 zoxide (extremely useful)
 trash-cli
