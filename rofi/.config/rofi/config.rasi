@@ -53,7 +53,7 @@ inputbar {
 }
 
 entry {
-    placeholder:"  Search Apps";
+    placeholder:"  Search";
     text-color: @fg-color;
     placeholder-color: @fgp-color;
     margin: 10px;
