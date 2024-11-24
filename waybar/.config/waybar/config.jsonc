@@ -97,7 +97,7 @@
 
   "custom/chatgpt": {
     "format": "",
-    "on-click": "chromium --incognito --app=https://chat.openai.com",
+    "on-click": "chromium --ozone-platform=wayland --incognito --app=https://chat.openai.com",
     "tooltip-format": "ChatGPT"
   },
 
