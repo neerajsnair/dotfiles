@@ -27,14 +27,14 @@ button {
 button:focus {
 	background-color: @color11;
 	outline-style: none;
-	color: @background;
+	/*color: @background;*/
 	background-size: 22%;
 }
 
 button:hover {
 	background-color: @color11;
 	outline-style: none;
-	color: @background;
+	/*color: @background;*/
 	background-size: 26%;
 }
 
