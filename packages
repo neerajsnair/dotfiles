@@ -1,4 +1,4 @@
-xorg-xhost (extremely important. apps thta need elevated privileges wont launch from gui)
+xorg-xhost (extremely important. apps that need elevated privileges wont launch from gui)
 tldr
 zoxide (extremely useful)
 trash-cli
@@ -10,6 +10,8 @@ nwg-look (gtk theming)
 libmtp, gvfs
 bluez, bluez-utils (bluetooth)
 thunar,  tumbler (for image preview), (also download plugins + unarchiver)
+nautilus
+ffmpegthumbnailer (generate vedio thumbnails)
 kitty
 kvantum (qt theming)
 loupe (image viewer)
@@ -21,7 +23,7 @@ hyprgui (config editor for hyprland)
 swaync, libnotify (autostart swaync as it is a daemon)
 stow
 python-pywal16 (aur)
-waypaper (frontend for swww, hyprpaper etc)
+waypaper (frontend for swww, hyprpaper etc [aur])
 
 
 
