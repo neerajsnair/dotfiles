@@ -2,6 +2,7 @@ xorg-xhost (extremely important. apps that need elevated privileges wont launch 
 tldr
 zoxide (extremely useful)
 trash-cli
+bash-completion
 btop
 ranger
 yazi, better than ranger
@@ -13,7 +14,7 @@ thunar,  tumbler (for image preview), (also download plugins + unarchiver)
 nautilus
 ffmpegthumbnailer (generate vedio thumbnails)
 kitty
-kvantum (qt theming)
+kvantum, qt5ct, qt6ct, kvantum-qt5, qt5-wayland, qt6-wayland (qt theming)
 loupe (image viewer)
 Bibata-Modern-Classic  (cursor, place it in $HOME/.local/share/icons   or  $HOME/.icons)
 papirus-icon-theme (available in repos and aur)
