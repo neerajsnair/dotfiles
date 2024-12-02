@@ -5,22 +5,25 @@
   // "height": 28, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
-  "margin-top": 6,
-  "margin-left": 6,
-  "margin-right": 6,
+  "margin-top": 2,
+  "margin-left": 2,
+  "margin-right": 2,
   // Choose the order of the modules
   "modules-left": [
     "custom/launcher",
     "hyprland/workspaces",
-    "group/hidden"
+    "wlr/taskbar"
+    //"group/hidden"
     //"hyprland/window"
   ],
 
   "modules-center": [
     "clock"
+    //"hyprland/workspaces"
   ],
 
   "modules-right": [
+    //"clock",
     "idle_inhibitor",
     "pulseaudio",
     //"network",
@@ -39,6 +42,23 @@
     "on-click":"pkill rofi || rofi -show drun",
     "on-click-right":"hyprctl dispatch overview:toggle",
     "escape": true,
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "rotate": 0,
+    "icon-size": 16,
+    "icon-theme": "Papirus-Dark",
+    "spacing": 0,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    //"ignore-list": [
+    //  "Alacritty"
+    //],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    }
   },
 
   "hyprland/workspaces": {
