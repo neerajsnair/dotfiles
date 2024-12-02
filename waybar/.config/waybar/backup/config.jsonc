@@ -21,6 +21,7 @@
   ],
 
   "modules-right": [
+    "idle_inhibitor",
     "pulseaudio",
     //"network",
     "backlight",
@@ -96,7 +97,7 @@
 
   "custom/chatgpt": {
     "format": "",
-    "on-click": "chromium --incognito --app=https://chat.openai.com",
+    "on-click": "chromium --ozone-platform=wayland --incognito --app=https://chat.openai.com",
     "tooltip-format": "ChatGPT"
   },
 
@@ -157,6 +158,14 @@
     "on-click-right":"pkill pavucontrol || pavucontrol",
     "format-icons": {
     "default": ["", "", " "],
+    }
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
     }
   },
   
