@@ -53,9 +53,10 @@
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
-    //"ignore-list": [
+    "ignore-list": [
+        "blueman-manager"
     //  "Alacritty"
-    //],
+    ],
     "app_ids-mapping": {
       "firefoxdeveloperedition": "firefox-developer-edition"
     }
