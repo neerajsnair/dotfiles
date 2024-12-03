@@ -29,6 +29,7 @@
     //"network",
     "backlight",
     "battery",
+    "power-profiles-daemon",
     "tray",
     "custom/notification",
     "custom/power",
@@ -194,6 +195,18 @@
     "format" : "",
     "tooltip-format": "Power Menu",
     "on-click":"wlogout",
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": " ",
+      "power-saver": " "
+    }
   },
 
   "custom/notification": {
