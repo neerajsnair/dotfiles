@@ -1,0 +1,262 @@
+/*color import from pywal*/
+@import '/home/neeraj/.cache/wal/colors-waybar.css';
+
+* {
+	border: none;
+	border-radius: 5px;
+	font-family: "JetbrainsMono Nerd Font";
+	font-size: 14px;
+	/*font-weight: bold;*/
+	min-height: 0px;
+}
+
+window#waybar {
+	background: none;
+	opacity: 1.0;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#window {
+	margin-top: 3px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 0px;
+	transition: none;
+	color: @color6;
+	background: @background;
+	font-family: MesloLGS Nerd Font Mono;
+	font-weight: bold;
+}
+
+#workspaces{
+	margin-top: 3px;
+	margin-left: 0px;
+	font-size: 4px;
+	margin-bottom: 0px;
+	/*border: 1px solid @color6;*/
+	background: @background;
+}
+
+#workspaces button {
+	margin-right: 0px;
+	padding-right: 8px;
+	padding-left: 8px;
+	transition: transform 2s ease;
+	color: @foreground;
+	background: transparent;
+	font-size: 16px;
+	/*font-weight: bold;*/
+	opacity: 1.0;
+	animation: fadeIn 1s ease-in;
+}
+
+#workspaces button.active {
+	transition: none;
+	background: @color6;
+	border-radius: 3px;
+	/*box-shadow: inset 0 -2px @foreground;*/
+	/*border: 1px solid @color6;*/
+	text-shadow: inherit;
+	color: @background;
+	opacity: 1.0;
+	animation: fadeIn 5s ease-in;
+}
+
+#workspaces button.active:hover {
+  color: @background;
+}
+
+#workspaces button:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: @color6;
+	opacity: 1.0;
+}
+
+#custom-expand {
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 0px;
+	/*border: 1px solid @color6;*/
+	font-size: 14px;
+	transition: none;
+	color: @foreground;
+	background: @background;
+	opacity: 1.0;
+}
+
+#custom-settings,
+#custom-github,
+#custom-chatgpt {
+	margin-top: 3px;
+	margin-left: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 0px;
+	/*border: 1px solid @color6;*/
+	font-size: 14px;
+	transition: none;
+	color: @foreground;
+	background: @background;
+	opacity: 1.0;
+}
+
+#battery,
+#custom-updates,
+#clock,
+#pulseaudio,
+#power-profiles-daemon,
+/*#custom-notification,*/
+#backlight {
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 0px;
+	/*border: 1px solid @color6;*/
+	transition: none;
+	color: @foreground;
+	background: @background;
+	opacity: 1.0;
+}
+
+#taskbar {
+margin-top: 3px;
+margin-left: 0px;
+padding-left: 0px;
+padding-right: 0px;
+margin-bottom: 0px;
+/*border: 1px solid @color6;*/
+transition: none;
+color: @foreground;
+background: @background;
+opacity: 1.0;
+}
+
+#idle_inhibitor {
+margin-top: 3px;
+margin-left: 0px;
+padding-left: 6px;
+padding-right: 14px;
+margin-bottom: 0px;
+font-size: 16;
+/*border: 1px solid @color6;*/
+transition: none;
+color: @foreground;
+background: @background;
+opacity: 1.0;
+}
+
+#custom-notification {
+margin-top: 3px;
+margin-left: 0px;
+padding-left: 8px;
+padding-right: 12px;
+margin-bottom: 0px;
+font-size: 16;
+/*border: 1px solid @color6;*/
+transition: none;
+color: @foreground;
+background: @background;
+opacity: 1.0;
+}
+
+#custom-settings:hover,
+#custom-github:hover,
+#custom-chatgpt:hover {
+/*#battery:hover,*/
+/*#clock:hover,*/
+/*#pulseaudio:hover,*/
+/*#custom-notification:hover,*/
+/*#backlight:hover{*/
+	color: @color6;
+}
+
+#battery.charging, #battery.plugged {
+	color: @foreground;
+	background-color: @background;
+}
+
+#battery.critical:not(.charging) {
+	background-color: @background;
+	color: #D6405C;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#battery.warning:not(.charging) {
+  background-color: @background;
+  color: #DB9763;
+}
+
+@keyframes slideIn {
+  from {
+      background: @background;
+      color: @color6; 
+  }
+  to {
+      background: @color6;
+      color: @foreground;
+  }
+}
+
+#tray {
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-bottom: 0px;
+	/*border: 1px solid @color6;*/
+	transition: none;
+	background: @background;
+	opacity: 1.0;
+}
+
+#custom-launcher {
+	font-size: 16px;
+	margin-top: 3px;
+	margin-left: 4px;
+	padding-left: 8px;
+	padding-right: 13px;
+	margin-bottom: 0px;
+	/*border: 1px solid @color6;*/
+	transition: none;
+	color: @color6;
+	background: @background;
+}
+
+#custom-power {
+	font-size: 16px;
+	margin-top: 3px;
+	margin-left: 0px;
+	margin-right: 4px;
+	padding-left: 8px;
+	padding-right: 13px;
+	margin-bottom: 0px;
+	/*border: 1px solid @color6;*/
+	transition: none;
+	color: @foreground;
+	background: @background;
+	opacity: 1.0;
+}
+
+#custom-power:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #D6405C;
+	background: @background;
+	/*border: 1px solid @color6;*/
+	opacity: 1.0;
+}
+
