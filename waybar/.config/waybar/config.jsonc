@@ -135,7 +135,7 @@
     "format": "{:%H:%M}",
     // "timezone": "America/New_York",
     "tooltip-format": "<big>{:%d-%m-%y}</big>\n<tt><big>{calendar}</big></tt>",
-    "format-alt": "{:%a %d-%m-%Y}"
+    "format-alt": "{:%a, %d-%m-%Y}"
   },
 
   "backlight": {
