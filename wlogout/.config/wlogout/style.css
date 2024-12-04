@@ -35,7 +35,7 @@ button:hover {
 	background-color: @color11;
 	outline-style: none;
 	/*color: @background;*/
-	background-size: 26%;
+	background-size: 24%;
 }
 
 #lock {
