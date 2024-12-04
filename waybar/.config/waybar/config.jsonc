@@ -199,7 +199,7 @@
     "return-type": "json",
     "exec": "~/.config/scripts/updates.sh",
     "interval": 1800,
-    "on-click": "alacritty -e yay -Syu",
+    "on-double-click": "alacritty -e yay -Syu",
     "on-click-right": "alacritty -e pacseek"
   },
 
