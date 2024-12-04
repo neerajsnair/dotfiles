@@ -109,6 +109,7 @@ window#waybar.hidden {
 }
 
 #battery,
+#custom-updates,
 #clock,
 #pulseaudio,
 #power-profiles-daemon,
