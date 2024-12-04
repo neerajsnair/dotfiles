@@ -108,11 +108,9 @@ window#waybar.hidden {
 	opacity: 1.0;
 }
 
-#battery,
 #custom-updates,
 #clock,
 #pulseaudio,
-/*#custom-notification,*/
 #backlight {
 	margin-top: 3px;
 	margin-left: 0px;
@@ -126,11 +124,24 @@ window#waybar.hidden {
 	opacity: 1.0;
 }
 
+#battery {
+margin-top: 3px;
+margin-left: 0px;
+padding-left: 4px;
+padding-right: 4px;
+margin-bottom: 0px;
+/*border: 1px solid @color6;*/
+transition: none;
+color: @foreground;
+background: @background;
+opacity: 1.0;
+}
+
 #power-profiles-daemon {
 margin-top: 3px;
 margin-left: 0px;
-padding-left: 8px;
-padding-right: 11px;
+padding-left: 12px;
+padding-right: 9px;
 margin-bottom: 0px;
 font-size: 17;
 /*border: 1px solid @color6;*/

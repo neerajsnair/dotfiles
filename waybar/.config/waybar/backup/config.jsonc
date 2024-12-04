@@ -29,8 +29,9 @@
     "pulseaudio",
     //"network",
     "backlight",
-    "battery",
-    "power-profiles-daemon",
+    "group/battery",
+    //"battery",
+    //"power-profiles-daemon",
     "tray",
     "custom/notification",
     "custom/power",
@@ -131,17 +132,33 @@
   },
 
   "clock": {
+    "format": "{:%H:%M}",
     // "timezone": "America/New_York",
     "tooltip-format": "<big>{:%d-%m-%y}</big>\n<tt><big>{calendar}</big></tt>",
-    "format-alt": "{:%d-%m-%Y}"
+    "format-alt": "{:%a, %d-%m-%Y}"
   },
 
   "backlight": {
     // "device": "acpi_video1",
-    "format": "{percent}% {icon}",
+    "format": "{icon} {percent}%",
     "scroll-step": 5,
     "format-icons": ["", "", "", "", "", "", "", "", ""],
     "tooltip-format": "Brightness"
+  },
+
+  "group/battery": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "click-to-reveal": false,
+      "children-class": "not-power",
+      "transition-left-to-right": true,
+    },
+
+    "modules": [
+      "battery",
+      "power-profiles-daemon"
+    ]
   },
 
   "battery": {
@@ -151,17 +168,30 @@
       "critical": 10
     },
 
-    "format": "{capacity}% {icon}",
-    "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% 󰂄",
-    "format-plugged": "{capacity}% 󰂄",
-    "format-alt": "{time} {icon}",
-    "format-critical": "{capacity}% 󰂃",
+    "format": "{icon} {capacity}%",
+    "format-full": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-critical": "󰂃 {capacity}%",
     //"format-good": "", // An empty format will hide the module
     // "format-full": "",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 1
   },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "󰠠",
+      "performance": "󰠠",
+      "balanced": "󰗑",
+      "power-saver": "󰌪"
+    }
+  },
+
 
   "network": {
     "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -208,18 +238,6 @@
     "format" : "",
     "tooltip-format": "Power Menu",
     "on-click":"wlogout",
-  },
-
-  "power-profiles-daemon": {
-    "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-    "tooltip": true,
-    "format-icons": {
-      "default": "󰠠",
-      "performance": "󰠠",
-      "balanced": "󰗑",
-      "power-saver": "󰌪"
-    }
   },
 
   "custom/notification": {
