@@ -112,7 +112,6 @@ window#waybar.hidden {
 #custom-updates,
 #clock,
 #pulseaudio,
-#power-profiles-daemon,
 /*#custom-notification,*/
 #backlight {
 	margin-top: 3px;
@@ -125,6 +124,20 @@ window#waybar.hidden {
 	color: @foreground;
 	background: @background;
 	opacity: 1.0;
+}
+
+#power-profiles-daemon {
+margin-top: 3px;
+margin-left: 0px;
+padding-left: 8px;
+padding-right: 11px;
+margin-bottom: 0px;
+font-size: 17;
+/*border: 1px solid @color6;*/
+transition: none;
+color: @foreground;
+background: @background;
+opacity: 1.0;
 }
 
 #taskbar {
