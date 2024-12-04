@@ -51,13 +51,13 @@ button:hover {
 }
 
 #hibernate {
-    background-image: image(url("/home/neeraj/.config/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+    background-image: image(url("/home/neeraj/.config/wlogout/icons/hibernate.png"));
 }
 
 #shutdown {
-    background-image: image(url("/home/neeraj/.config/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+    background-image: image(url("/home/neeraj/.config/wlogout/icons/shutdown.png"));
 }
 
 #reboot {
-    background-image: image(url("/home/neeraj/.config/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    background-image: image(url("/home/neeraj/.config/wlogout/icons/reboot.png"));
 }
