@@ -56,7 +56,8 @@
     "on-click": "activate",
     "on-click-middle": "close",
     "ignore-list": [
-        "blueman-manager"
+        "blueman-manager",
+        "virt-manager"
     //  "Alacritty"
     ],
     "app_ids-mapping": {
