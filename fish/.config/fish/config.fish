@@ -13,6 +13,7 @@ alias pico='edit'
 alias spico='sedit'
 alias nano='edit'
 alias snano='sedit'
+alias cat='bat'
 
 # Alias's to modified commands
 alias cp='cp -i'
