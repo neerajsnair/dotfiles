@@ -1,0 +1,5 @@
+hyprshot-git
+pacseek
+python-pywal16
+waypaper
+wlogout
