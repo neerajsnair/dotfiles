@@ -1,4 +1,5 @@
 alacritty
+base
 base-devel
 bash-completion
 bat
@@ -20,6 +21,7 @@ fish
 flatpak
 git
 gnome-disk-utility
+grub
 grub-btrfs
 gvfs-mtp
 hypridle
@@ -33,6 +35,9 @@ kate
 kvantum
 kvantum-qt5
 libguestfs
+linux
+linux-firmware
+linux-headers
 loupe
 man-db
 man-pages

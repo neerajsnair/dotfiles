@@ -3,3 +3,5 @@ pacseek
 python-pywal16
 waypaper
 wlogout
+yay
+yay-debug
