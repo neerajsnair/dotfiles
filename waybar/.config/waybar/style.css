@@ -21,7 +21,6 @@ window#waybar.hidden {
 
 #window {
 	margin-top: 3px;
-	margin-bottom: 0px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 0px;
@@ -36,7 +35,6 @@ window#waybar.hidden {
 	margin-top: 3px;
 	margin-left: 0px;
 	font-size: 4px;
-	margin-bottom: 0px;
 	/*border: 1px solid @color6;*/
 	background: @background;
 }
@@ -82,7 +80,6 @@ window#waybar.hidden {
 	margin-left: 0px;
 	padding-left: 8px;
 	padding-right: 8px;
-	margin-bottom: 0px;
 	/*border: 1px solid @color6;*/
 	font-size: 14px;
 	transition: none;
@@ -98,7 +95,6 @@ window#waybar.hidden {
 	margin-left: 4px;
 	padding-left: 8px;
 	padding-right: 8px;
-	margin-bottom: 0px;
 	/*border: 1px solid @color6;*/
 	font-size: 14px;
 	transition: none;
@@ -115,7 +111,6 @@ window#waybar.hidden {
 	margin-left: 0px;
 	padding-left: 8px;
 	padding-right: 8px;
-	margin-bottom: 0px;
 	/*border: 1px solid @color6;*/
 	transition: none;
 	color: @foreground;
@@ -128,7 +123,6 @@ margin-top: 3px;
 margin-left: 0px;
 padding-left: 4px;
 padding-right: 4px;
-margin-bottom: 0px;
 /*border: 1px solid @color6;*/
 transition: none;
 color: @foreground;
@@ -141,7 +135,6 @@ margin-top: 3px;
 margin-left: 0px;
 padding-left: 6px;
 padding-right: 8px;
-margin-bottom: 0px;
 font-size: 17;
 /*border: 1px solid @color6;*/
 transition: none;
@@ -155,7 +148,6 @@ margin-top: 3px;
 margin-left: 0px;
 padding-left: 0px;
 padding-right: 0px;
-margin-bottom: 0px;
 /*border: 1px solid @color6;*/
 transition: none;
 color: @foreground;
@@ -168,7 +160,6 @@ margin-top: 3px;
 margin-left: 0px;
 padding-left: 6px;
 padding-right: 14px;
-margin-bottom: 0px;
 font-size: 16;
 /*border: 1px solid @color6;*/
 transition: none;
@@ -182,7 +173,6 @@ margin-top: 3px;
 margin-left: 0px;
 padding-left: 8px;
 padding-right: 12px;
-margin-bottom: 0px;
 font-size: 16;
 /*border: 1px solid @color6;*/
 transition: none;
@@ -238,7 +228,6 @@ opacity: 1.0;
 	margin-left: 0px;
 	padding-left: 6px;
 	padding-right: 6px;
-	margin-bottom: 0px;
 	/*border: 1px solid @color6;*/
 	transition: none;
 	background: @background;
@@ -251,7 +240,6 @@ opacity: 1.0;
 	margin-left: 4px;
 	padding-left: 8px;
 	padding-right: 13px;
-	margin-bottom: 0px;
 	/*border: 1px solid @color6;*/
 	transition: none;
 	color: @color6;
@@ -265,7 +253,6 @@ opacity: 1.0;
 	margin-right: 4px;
 	padding-left: 8px;
 	padding-right: 13px;
-	margin-bottom: 0px;
 	/*border: 1px solid @color6;*/
 	transition: none;
 	color: @foreground;
