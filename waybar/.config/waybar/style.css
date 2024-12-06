@@ -74,34 +74,6 @@ window#waybar.hidden {
 	opacity: 1.0;
 }
 
-#custom-expand {
-	margin-top: 3px;
-	margin-left: 0px;
-	padding-left: 8px;
-	padding-right: 8px;
-	/*border: 1px solid @color6;*/
-	font-size: 14px;
-	transition: none;
-	color: @foreground;
-	background: @background;
-	opacity: 1.0;
-}
-
-#custom-settings,
-#custom-github,
-#custom-chatgpt {
-	margin-top: 3px;
-	margin-left: 4px;
-	padding-left: 8px;
-	padding-right: 8px;
-	/*border: 1px solid @color6;*/
-	font-size: 14px;
-	transition: none;
-	color: @foreground;
-	background: @background;
-	opacity: 1.0;
-}
-
 #custom-updates,
 #clock,
 #pulseaudio,

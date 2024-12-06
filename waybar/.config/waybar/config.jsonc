@@ -1,29 +1,27 @@
 // -*- mode: jsonc -*-
 {
-  "layer": "top", // Waybar at top layer
-  // "position": "bottom", // Waybar position (top|bottom|left|right)
-  // "height": 28, // Waybar height (to be removed for auto height)
-  // "width": 1280, // Waybar width
-  "spacing": 4, // Gaps between modules (4px)
+  "layer": "top",           // Waybar at top layer
+  //"position": "bottom",   // Waybar position (top|bottom|left|right)
+  //"height": 28,           // Waybar height (to be removed for auto height)
+  //"width": 1280,          // Waybar width
+  "spacing": 4,             // Gaps between modules (4px)
   "margin-top": 2,
   "margin-left": 2,
   "margin-right": 2,
+
   // Choose the order of the modules
   "modules-left": [
     "custom/launcher",
     "hyprland/workspaces",
     "wlr/taskbar"
-    //"group/hidden"
     //"hyprland/window"
   ],
 
   "modules-center": [
     "clock"
-    //"hyprland/workspaces"
   ],
 
   "modules-right": [
-    //"clock",
     "idle_inhibitor",
     "custom/updates",
     "pulseaudio",
@@ -40,7 +38,7 @@
   // Modules configuration
 
   "custom/launcher":{
-    "format" : "",                                  //
+    "format" : "",
     "tooltip-format": "App Menu",
     "on-click":"pkill rofi || rofi -show drun",
     "on-click-right":"hyprctl dispatch overview:toggle",
@@ -59,7 +57,6 @@
     "ignore-list": [
         "blueman-manager",
         "virt-manager"
-    //  "Alacritty"
     ],
     "app_ids-mapping": {
       "firefoxdeveloperedition": "firefox-developer-edition"
@@ -68,62 +65,12 @@
 
   "hyprland/workspaces": {
     "format": "{icon}",
-    "format-icons": {
-      //"1": "",
-      //"2": "",
-      //"3": "",
-      //"4": "",
-      //"5": "",
-      //"active": "",
-      //"default": " "
-    },
-
     "on-scroll-up": "hyprctl dispatch workspace r-1",
     "on-scroll-down": "hyprctl dispatch workspace r+1",
     "all-outputs": false,
     "persistent-workspaces": {
     "*": 5,
     }
-  },
-
-  "group/hidden": {
-    "orientation": "inherit",
-    "drawer": {
-        "transition-duration": 300,
-        "click-to-reveal": false,
-        "children-class": "not-power",
-        "transition-left-to-right": true,
-    },
-
-    "modules": [
-        "custom/expand",
-        "custom/settings", // First element is the "group leader" and won't ever be hidden
-        "custom/github",
-        "custom/chatgpt",
-    ]
-  },
-
-  "custom/expand": {
-    "format": "",
-    "tooltip-format": "Show More"
-  },
-
-  "custom/settings": {
-    "format": "",
-    "on-click": "hyprgui",
-    "tooltip-format": "Settings"
-  },
-
-  "custom/github": {
-    "format": "",
-    "on-click": "chromium --incognito --app=https://www.github.com/login",
-    "tooltip-format": "Github"
-  },
-
-  "custom/chatgpt": {
-    "format": "",
-    "on-click": "chromium --ozone-platform=wayland --incognito --app=https://chat.openai.com",
-    "tooltip-format": "ChatGPT"
   },
 
   "tray": {
