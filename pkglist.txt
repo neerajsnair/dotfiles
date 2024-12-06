@@ -75,6 +75,7 @@ swww
 terminus-font
 timeshift
 trash-cli
+ttf-font-awesome
 ttf-jetbrains-mono-nerd
 ttf-meslo-nerd
 tumbler
