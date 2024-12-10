@@ -178,7 +178,7 @@
     "exec": "~/.config/scripts/updates.sh",
     "interval": 1800,
     "on-double-click": "alacritty -e yay -Syu",
-    "on-click-right": "alacritty -e pacseek -u"
+    "on-click-right": "alacritty -e pacseek -ui"
   },
 
   "custom/power": {
