@@ -90,72 +90,66 @@ window#waybar.hidden {
 }
 
 #battery {
-margin-top: 3px;
-margin-left: 0px;
-padding-left: 4px;
-padding-right: 4px;
-/*border: 1px solid @color6;*/
-transition: none;
-color: @foreground;
-background: @background;
-opacity: 1.0;
-}
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+	/*border: 1px solid @color6;*/
+	transition: none;
+	color: @foreground;
+	background: @background;
+	opacity: 1.0;
+	}
 
 #power-profiles-daemon {
-margin-top: 3px;
-margin-left: 0px;
-padding-left: 6px;
-padding-right: 8px;
-font-size: 17;
-/*border: 1px solid @color6;*/
-transition: none;
-color: @foreground;
-background: @background;
-opacity: 1.0;
-}
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 6px;
+	padding-right: 8px;
+	font-size: 17;
+	/*border: 1px solid @color6;*/
+	transition: none;
+	color: @foreground;
+	background: @background;
+	opacity: 1.0;
+	}
 
 #taskbar {
-margin-top: 3px;
-margin-left: 0px;
-padding-left: 0px;
-padding-right: 0px;
-/*border: 1px solid @color6;*/
-transition: none;
-color: @foreground;
-background: @background;
-opacity: 1.0;
-}
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	/*border: 1px solid @color6;*/
+	transition: none;
+	color: @foreground;
+	background: @background;
+	opacity: 1.0;
+	}
 
 #idle_inhibitor {
-margin-top: 3px;
-margin-left: 0px;
-padding-left: 6px;
-padding-right: 14px;
-font-size: 16;
-/*border: 1px solid @color6;*/
-transition: none;
-color: @foreground;
-background: @background;
-opacity: 1.0;
-}
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 6px;
+	padding-right: 14px;
+	font-size: 16;
+	/*border: 1px solid @color6;*/
+	transition: none;
+	color: @foreground;
+	background: @background;
+	opacity: 1.0;
+	}
 
 #custom-notification {
-margin-top: 3px;
-margin-left: 0px;
-padding-left: 8px;
-padding-right: 12px;
-font-size: 16;
-/*border: 1px solid @color6;*/
-transition: none;
-color: @foreground;
-background: @background;
-opacity: 1.0;
-}
-
-#custom-settings:hover,
-#custom-github:hover,
-#custom-chatgpt:hover {
-	color: @color6;
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 8px;
+	padding-right: 12px;
+	font-size: 16;
+	/*border: 1px solid @color6;*/
+	transition: none;
+	color: @foreground;
+	background: @background;
+	opacity: 1.0;
 }
 
 #battery.charging, #battery.plugged {
@@ -174,19 +168,19 @@ opacity: 1.0;
 }
 
 #battery.warning:not(.charging) {
-  background-color: @background;
-  color: #DB9763;
+	background-color: @background;
+	color: #DB9763;
 }
 
 @keyframes slideIn {
-  from {
-      background: @background;
+	from {
+	  background: @background;
       color: @color6; 
-  }
-  to {
+	}
+	to {
       background: @color6;
       color: @foreground;
-  }
+	}
 }
 
 #tray {
