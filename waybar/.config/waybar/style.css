@@ -119,12 +119,24 @@ window#waybar.hidden {
 	margin-left: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
-	/*border: 1px solid @color6;*/
+
 	transition: none;
 	color: @foreground;
 	background: @background;
 	opacity: 1.0;
 	}
+
+#taskbar button {
+	margin-left: 0px;
+	margin-right:0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+
+#taskbar button.active {
+	background: @color6;
+}
+
 
 #idle_inhibitor {
 	margin-top: 3px;

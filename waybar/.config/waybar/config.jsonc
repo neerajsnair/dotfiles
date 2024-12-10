@@ -48,7 +48,7 @@
   "wlr/taskbar": {
     "format": "{icon}",
     "rotate": 0,
-    "icon-size": 16,
+    "icon-size": 18,
     "icon-theme": "Papirus-Dark",
     "spacing": 0,
     "tooltip-format": "{title}",
