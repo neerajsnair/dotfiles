@@ -28,6 +28,7 @@ hypridle
 hyprland
 hyprlock
 hyprpicker
+hyprutils
 inotify-tools
 intel-ucode
 iptables-nft
@@ -49,6 +50,10 @@ nemo-fileroller
 neovim
 network-manager-applet
 networkmanager
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
 ntfs-3g
 nwg-look
 openbsd-netcat
@@ -88,6 +93,7 @@ virt-viewer
 vlc
 waybar
 wireless_tools
+wlr-randr
 wpa_supplicant
 xarchiver
 xdg-desktop-portal-gtk
