@@ -41,7 +41,6 @@
     "format" : "",
     "tooltip-format": "App Menu",
     "on-click":"pkill rofi || rofi -show drun",
-    "on-click-right":"hyprctl dispatch overview:toggle",
     "escape": true,
   },
 
@@ -82,7 +81,7 @@
     "format": "{:%H:%M}",
     // "timezone": "America/New_York",
     "tooltip-format": "<tt><big>{calendar}</big></tt>",
-    "format-alt": "{:%a, %d-%m-%Y}"
+    "format-alt": "{:%a %d-%m-%Y}"
   },
 
   "backlight": {
@@ -177,8 +176,7 @@
     "return-type": "json",
     "exec": "~/.config/scripts/updates.sh",
     "interval": 1800,
-    "on-double-click": "alacritty -e yay -Syu",
-    "on-click-right": "alacritty -e pacseek -ui"
+    "on-double-click": "alacritty -e pacseek -ui"
   },
 
   "custom/power": {
