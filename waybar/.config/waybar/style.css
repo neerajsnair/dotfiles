@@ -106,7 +106,7 @@ window#waybar.hidden {
 	margin-left: 0px;
 	padding-left: 6px;
 	padding-right: 8px;
-	font-size: 17;
+	font-size: 17px;
 	/*border: 1px solid @color6;*/
 	transition: none;
 	color: @foreground;
@@ -144,7 +144,7 @@ window#waybar.hidden {
 	margin-left: 0px;
 	padding-left: 6px;
 	padding-right: 14px;
-	font-size: 16;
+	font-size: 16px;
 	/*border: 1px solid @color6;*/
 	transition: none;
 	color: @foreground;
@@ -157,7 +157,7 @@ window#waybar.hidden {
 	margin-left: 0px;
 	padding-left: 8px;
 	padding-right: 12px;
-	font-size: 16;
+	font-size: 16px;
 	/*border: 1px solid @color6;*/
 	transition: none;
 	color: @foreground;
