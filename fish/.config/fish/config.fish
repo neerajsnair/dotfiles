@@ -7,8 +7,14 @@ alias linutil='curl -fsSL https://christitus.com/linux | sh'
 alias bctl='brightnessctl'
 
 # Set the default editor
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR="nvim"
+export VISUAL="nvim"
+export TERMINAL="alacritty"
+export BROWSER="chromium"
+export VIDEO="vlc"
+export IMAGE="loupe"
+export OPENER="xdg-open"
+
 alias pico='edit'
 alias spico='sedit'
 alias nano='edit'
