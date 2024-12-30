@@ -5,3 +5,5 @@ background-opacity = 0.7
 window-decoration = false
 confirm-close-surface = false
 command = /bin/fish
+gtk-wide-tabs = false
+shell-integration = fish
