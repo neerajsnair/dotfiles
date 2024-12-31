@@ -13,6 +13,7 @@ config.colors = {
 }
 
 --APPEARANCE
+config.font = wezterm.font 'MesloLGS Nerd Font Mono'
 config.font_size = 13.0
 config.default_cursor_style = 'SteadyBar'
 config.underline_thickness = 1
