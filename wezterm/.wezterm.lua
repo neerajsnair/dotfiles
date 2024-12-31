@@ -6,11 +6,13 @@ local config = wezterm.config_builder()
 config.default_prog = { '/usr/bin/fish', '-l' }
 
 --COLORS
+--config.color_scheme = "Dracula (Official)"
 config.colors = {
   foreground = 'white',
-  background = 'rgb(2 7 22 / 45%)',
+  background = 'rgb(2 8 25 / 45%)',
   cursor_bg = 'white',
 }
+
 
 --APPEARANCE
 config.font = wezterm.font 'MesloLGS Nerd Font Mono'
