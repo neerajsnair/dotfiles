@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=ChatGPT
+Comment=Ai assistant
+Exec=chromium --incognito --app=https://chat.openai.com
+Icon=~/.icons/chatgpt.svg
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=ChatGPT
