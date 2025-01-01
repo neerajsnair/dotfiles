@@ -7,6 +7,8 @@ add this to the kdeglobals file in /home to get "open in terminal" working in do
 TerminalApplication=alacritty
 TerminalService=Alacritty
 
+for kitty, use small letters in both entries
+
 "misc" also contains files to get this feature working in nemo and thunar
 
 ===============================================================================
