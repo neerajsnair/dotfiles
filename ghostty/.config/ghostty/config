@@ -8,8 +8,8 @@
     font-size = 13
 
 #THEME & COLORS
-    theme = GitHub Dark
-    #background = #020819
+    #theme = catppuccin-mocha
+    background = #020819
     background-opacity = 0.9
 
 #WINDOW
