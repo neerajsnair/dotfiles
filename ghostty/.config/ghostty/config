@@ -8,14 +8,14 @@
     font-size = 13
 
 #THEME & COLORS
-    #theme = Dracula
-    background = #020819
-    background-opacity = 0.7
+    theme = GitHub Dark
+    #background = #020819
+    background-opacity = 0.9
 
 #WINDOW
     window-decoration = false
     window-theme = ghostty
-    gtk-wide-tabs = false
+    gtk-wide-tabs = true
     adw-toolbar-style = flat
     confirm-close-surface = false
     window-save-state = always
