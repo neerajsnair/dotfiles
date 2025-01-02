@@ -19,3 +19,6 @@
     adw-toolbar-style = flat
     confirm-close-surface = false
 
+#KEYBINDINGS
+
+    keybind = alt+t=toggle_window_decorations
