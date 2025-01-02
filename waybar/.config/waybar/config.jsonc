@@ -30,8 +30,9 @@
     "group/battery",
     //"battery",
     //"power-profiles-daemon",
-    "tray",
-    "custom/notification",
+    //"tray",
+    "group/tray",
+    //"custom/notification",
     "custom/power",
     ],
 
@@ -182,6 +183,36 @@
     "format" : "",
     "tooltip-format": "Power Menu",
     "on-click":"wlogout",
+  },
+
+  "group/battery": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "click-to-reveal": false,
+      "children-class": "not-power",
+      "transition-left-to-right": true,
+    },
+
+    "modules": [
+      "battery",
+      "power-profiles-daemon"
+    ]
+  },
+
+  "group/tray": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "click-to-reveal": false,
+      "children-class": "not-power",
+      "transition-left-to-right": false,
+    },
+
+    "modules": [
+      "custom/notification",
+      "tray"
+    ]
   },
 
   "custom/notification": {
