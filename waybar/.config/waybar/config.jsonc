@@ -74,11 +74,6 @@
     }
   },
 
-  "tray": {
-    "icon-size": 20,
-    "spacing": 10,
-  },
-
   "clock": {
     "format": "{:%H:%M}",
     // "timezone": "America/New_York",
@@ -236,4 +231,10 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
+
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10,
+  },
+
 }
