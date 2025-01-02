@@ -1,11 +1,21 @@
-font-family = MesloLGS Nerd Font Mono
-font-size = 13
-#theme = Dracula
-background = #020819
-background-opacity = 0.7
-window-decoration = false
-window-theme = ghostty
-confirm-close-surface = false
-command = /bin/fish
-gtk-wide-tabs = false
-shell-integration = fish
+
+#SHELL
+    command = /bin/fish
+    shell-integration = fish
+
+#FONT
+    font-family = MesloLGS Nerd Font Mono
+    font-size = 13
+
+#THEME & COLORS
+    theme = Dracula
+    #background = #020819
+    #background-opacity = 0.7
+
+#WINDOW
+    #window-decoration = false
+    window-theme = ghostty
+    gtk-wide-tabs = false
+    adw-toolbar-style = flat
+    confirm-close-surface = false
+
