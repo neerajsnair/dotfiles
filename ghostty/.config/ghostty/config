@@ -13,7 +13,7 @@
     #background-opacity = 0.7
 
 #WINDOW
-    #window-decoration = false
+    window-decoration = false
     window-theme = ghostty
     gtk-wide-tabs = false
     adw-toolbar-style = flat
@@ -22,3 +22,9 @@
 #KEYBINDINGS
 
     keybind = alt+t=toggle_window_decorations
+
+    #SPLITS
+    keybind = alt+h=new_split:left
+    keybind = alt+l=new_split:right
+    keybind = alt+k=new_split:up
+    keybind = alt+j=new_split:down
