@@ -1,5 +1,5 @@
 /*color import from pywal*/
-@import '/home/neeraj/.cache/wal/colors-waybar.css';
+@import '/home/neeraj/.config/waybar/mocha.css';
 
 * {
 	border: none;
@@ -25,7 +25,7 @@ window#waybar.hidden {
 	padding-right: 10px;
 	transition: none;
 	color: @color6;
-	background: @background;
+	background: @crust;
 	font-family: MesloLGS Nerd Font Mono;
 	font-weight: bold;
 }
@@ -35,7 +35,7 @@ window#waybar.hidden {
 	margin-left: 0px;
 	font-size: 4px;
 	/*border: 1px solid @color6;*/
-	background: @background;
+	background: @crust;
 }
 
 #workspaces button {
@@ -43,7 +43,7 @@ window#waybar.hidden {
 	padding-right: 8px;
 	padding-left: 8px;
 	transition: transform 2s ease;
-	color: @foreground;
+	color: @mauve;
 	background: transparent;
 	font-size: 16px;
 	/*font-weight: bold;*/
@@ -53,26 +53,38 @@ window#waybar.hidden {
 
 #workspaces button.active {
 	transition: none;
-	background: @color6;
+	background: @blue;
 	/*box-shadow: inset 0 -2px @foreground;*/
 	/*border: 1px solid @color6;*/
 	text-shadow: inherit;
-	color: @background;
+	color: @crust;
 	opacity: 1.0;
 	animation: fadeIn 5s ease-in;
 }
 
 #workspaces button.active:hover {
-  color: @background;
+  color: @crust;
 }
 
 #workspaces button:hover {
 	transition: none;
 	box-shadow: inherit;
 	text-shadow: inherit;
-	color: @color6;
+	color: @red;
 	opacity: 1.0;
 }
+
+#custom-updates { color: @peach}
+#pulseaudio {color: @blue}
+#backlight {color: @yellow}
+#clock {color: @red}
+#battery {color: @green}
+#power-profiles-daemon {color: @green}
+#idle_inhibitor {color: @teal}
+#custom-notification {color: @mauve}
+#custom-launcher {color: @blue}
+#custom-power {color: @red}
+
 
 #custom-updates,
 #clock,
@@ -84,8 +96,7 @@ window#waybar.hidden {
 	padding-right: 8px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	color: @foreground;
-	background: @background;
+	background: @crust;
 	opacity: 1.0;
 }
 
@@ -96,8 +107,7 @@ window#waybar.hidden {
 	padding-right: 4px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	color: @foreground;
-	background: @background;
+	background: @crust;
 	opacity: 1.0;
 	}
 
@@ -109,8 +119,7 @@ window#waybar.hidden {
 	font-size: 17px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	color: @foreground;
-	background: @background;
+	background: @crust;
 	opacity: 1.0;
 	}
 
@@ -119,10 +128,9 @@ window#waybar.hidden {
 	margin-left: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
-
 	transition: none;
-	color: @foreground;
-	background: @background;
+	color: @blue;
+	background: @crust;
 	opacity: 1.0;
 	}
 
@@ -134,7 +142,7 @@ window#waybar.hidden {
 	}
 
 #taskbar button.active {
-	box-shadow: inset 0 -2px @color6;
+	box-shadow: inset 0 -2px @blue;
 	border-radius: 0px;
 }
 
@@ -147,8 +155,7 @@ window#waybar.hidden {
 	font-size: 16px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	color: @foreground;
-	background: @background;
+	background: @crust;
 	opacity: 1.0;
 	}
 
@@ -160,18 +167,17 @@ window#waybar.hidden {
 	font-size: 16px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	color: @foreground;
-	background: @background;
+	background: @crust;
 	opacity: 1.0;
 }
 
 #battery.charging, #battery.plugged {
-	color: @foreground;
-	background-color: @background;
+	color: @green;
+	background-color: @crust;
 }
 
 #battery.critical:not(.charging) {
-	background-color: @background;
+	background-color: @crust;
 	color: #D6405C;
 	animation-name: blink;
 	animation-duration: 0.5s;
@@ -181,13 +187,13 @@ window#waybar.hidden {
 }
 
 #battery.warning:not(.charging) {
-	background-color: @background;
+	background-color: @crust;
 	color: #DB9763;
 }
 
 @keyframes slideIn {
 	from {
-	  background: @background;
+	  background: @crust;
       color: @color6; 
 	}
 	to {
@@ -203,7 +209,7 @@ window#waybar.hidden {
 	padding-right: 6px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @background;
+	background: @crust;
 	opacity: 1.0;
 }
 
@@ -215,8 +221,7 @@ window#waybar.hidden {
 	padding-right: 13px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	color: @color6;
-	background: @background;
+	background: @crust;
 }
 
 #custom-power {
@@ -228,8 +233,7 @@ window#waybar.hidden {
 	padding-right: 13px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	color: @foreground;
-	background: @background;
+	background: @crust;
 	opacity: 1.0;
 }
 
@@ -238,7 +242,7 @@ window#waybar.hidden {
 	box-shadow: inherit;
 	text-shadow: inherit;
 	color: #D6405C;
-	background: @background;
+	background: @crust;
 	/*border: 1px solid @color6;*/
 	opacity: 1.0;
 }
