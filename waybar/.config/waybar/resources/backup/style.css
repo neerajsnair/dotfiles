@@ -24,8 +24,8 @@ window#waybar.hidden {
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: none;
-	color: @color6;
-	background: @crust;
+	color: @mauve;
+	background: @base;
 	font-family: MesloLGS Nerd Font Mono;
 	font-weight: bold;
 }
@@ -35,7 +35,7 @@ window#waybar.hidden {
 	margin-left: 0px;
 	font-size: 4px;
 	/*border: 1px solid @color6;*/
-	background: @crust;
+	background: @base;
 }
 
 #workspaces button {
@@ -57,13 +57,13 @@ window#waybar.hidden {
 	/*box-shadow: inset 0 -2px @foreground;*/
 	/*border: 1px solid @color6;*/
 	text-shadow: inherit;
-	color: @crust;
+	color: @base;
 	opacity: 1.0;
 	animation: fadeIn 5s ease-in;
 }
 
 #workspaces button.active:hover {
-  color: @crust;
+  color: @base;
 }
 
 #workspaces button:hover {
@@ -96,7 +96,7 @@ window#waybar.hidden {
 	padding-right: 8px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @crust;
+	background: @base;
 	opacity: 1.0;
 }
 
@@ -107,7 +107,7 @@ window#waybar.hidden {
 	padding-right: 4px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @crust;
+	background: @base;
 	opacity: 1.0;
 	}
 
@@ -119,7 +119,7 @@ window#waybar.hidden {
 	font-size: 17px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @crust;
+	background: @base;
 	opacity: 1.0;
 	}
 
@@ -130,7 +130,7 @@ window#waybar.hidden {
 	padding-right: 0px;
 	transition: none;
 	color: @blue;
-	background: @crust;
+	background: @base;
 	opacity: 1.0;
 	}
 
@@ -155,7 +155,7 @@ window#waybar.hidden {
 	font-size: 16px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @crust;
+	background: @base;
 	opacity: 1.0;
 	}
 
@@ -167,17 +167,17 @@ window#waybar.hidden {
 	font-size: 16px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @crust;
+	background: @base;
 	opacity: 1.0;
 }
 
 #battery.charging, #battery.plugged {
 	color: @green;
-	background-color: @crust;
+	background-color: @base;
 }
 
 #battery.critical:not(.charging) {
-	background-color: @crust;
+	background-color: @base;
 	color: #D6405C;
 	animation-name: blink;
 	animation-duration: 0.5s;
@@ -187,13 +187,13 @@ window#waybar.hidden {
 }
 
 #battery.warning:not(.charging) {
-	background-color: @crust;
+	background-color: @base;
 	color: #DB9763;
 }
 
 @keyframes slideIn {
 	from {
-	  background: @crust;
+	  background: @base;
       color: @color6; 
 	}
 	to {
@@ -209,7 +209,7 @@ window#waybar.hidden {
 	padding-right: 6px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @crust;
+	background: @base;
 	opacity: 1.0;
 }
 
@@ -221,7 +221,7 @@ window#waybar.hidden {
 	padding-right: 13px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @crust;
+	background: @base;
 }
 
 #custom-power {
@@ -233,7 +233,7 @@ window#waybar.hidden {
 	padding-right: 13px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @crust;
+	background: @base;
 	opacity: 1.0;
 }
 
@@ -242,7 +242,7 @@ window#waybar.hidden {
 	box-shadow: inherit;
 	text-shadow: inherit;
 	color: #D6405C;
-	background: @crust;
+	background: @base;
 	/*border: 1px solid @color6;*/
 	opacity: 1.0;
 }
