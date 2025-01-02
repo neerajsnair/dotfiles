@@ -25,14 +25,14 @@ button {
 }
 
 button:focus {
-	background-color: @pink;
+	background-color: @mauve;
 	outline-style: none;
 	/*color: @background;*/
 	background-size: 22%;
 }
 
 button:hover {
-	background-color: @pink;
+	background-color: @mauve;
 	outline-style: none;
 	/*color: @background;*/
 	background-size: 24%;
