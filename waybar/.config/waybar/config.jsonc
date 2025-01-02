@@ -55,7 +55,8 @@
     "on-click-middle": "close",
     "ignore-list": [
         "blueman-manager",
-        "virt-manager"
+        "virt-manager",
+        "com.mitchellh.ghostty"
     ],
     "app_ids-mapping": {
       "firefoxdeveloperedition": "firefox-developer-edition"
@@ -138,7 +139,6 @@
     }
   },
 
-
   "network": {
     "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
@@ -168,7 +168,6 @@
       "deactivated": ""
     }
   },
-  
 
   "custom/updates": {
     "format": "  {}",
