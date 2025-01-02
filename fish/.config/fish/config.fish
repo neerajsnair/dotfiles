@@ -9,7 +9,7 @@ alias bctl='brightnessctl'
 # Set the default editor
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMINAL="alacritty"
+export TERMINAL="kitty"
 export BROWSER="chromium"
 export VIDEO="vlc"
 export IMAGE="loupe"
