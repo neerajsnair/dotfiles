@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Name=Power Menu
+Comment=rofi power menu
+Exec=rofi -show power-menu -modi power-menu:rofi-power-menu
+Terminal=false
+Type=Application
