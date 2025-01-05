@@ -53,6 +53,7 @@
     "spacing": 0,
     "tooltip-format": "{title}",
     "on-click": "activate",
+    "on-click-right": "maximize",
     "on-click-middle": "close",
     "ignore-list": [
         "blueman-manager",
@@ -72,11 +73,6 @@
     "persistent-workspaces": {
     "*": 5,
     }
-  },
-
-  "tray": {
-    "icon-size": 20,
-    "spacing": 10,
   },
 
   "clock": {
@@ -236,4 +232,10 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
+
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10,
+  },
+
 }
