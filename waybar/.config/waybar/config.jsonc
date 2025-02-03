@@ -56,7 +56,6 @@
     "on-click-right": "maximize",
     "on-click-middle": "close",
     "ignore-list": [
-        "blueman-manager",
         "virt-manager",
         "com.mitchellh.ghostty"
     ],
