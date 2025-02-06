@@ -6,6 +6,7 @@ alias ff='fastfetch'
 alias linutil='curl -fsSL https://christitus.com/linux | sh'
 alias bctl='brightnessctl'
 alias clip='cliphist list | fzf --no-sort | cliphist decode | wl-copy'
+alias fa='fzf | xargs nvim'
 
 # Set the default editor
 export EDITOR="nvim"
