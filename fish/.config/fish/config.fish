@@ -7,6 +7,7 @@ alias linutil='curl -fsSL https://christitus.com/linux | sh'
 alias bctl='brightnessctl'
 alias clip='cliphist list | fzf --no-sort | cliphist decode | wl-copy'
 alias ff="fzf --preview='pistol {}' | xargs nvim"
+alias fd='cd $(find . -type d -print | fzf)'
 
 # Set the default editor
 export EDITOR="nvim"

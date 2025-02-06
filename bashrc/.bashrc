@@ -42,6 +42,7 @@ alias linutil='curl -fsSL https://christitus.com/linux | sh'
 alias bctl='brightnessctl'
 alias clip='cliphist list | fzf --no-sort | cliphist decode | wl-copy'
 alias ff="fzf --preview='bat {}' | xargs nvim"
+alias fd='cd $(find . -type d -print | fzf)'
 
 #######################################################
 # EXPORTS
