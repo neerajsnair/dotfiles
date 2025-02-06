@@ -8,6 +8,7 @@ alias bctl='brightnessctl'
 alias clip='cliphist list | fzf --no-sort | cliphist decode | wl-copy'
 alias ff="fzf --preview='pistol {}' | xargs nvim"
 alias fd='cd $(find . -type d -print | fzf)'
+alias fc='fzf | wl-copy'
 
 # Set the default editor
 export EDITOR="nvim"
