@@ -41,7 +41,7 @@ alias ff='fastfetch'
 alias linutil='curl -fsSL https://christitus.com/linux | sh'
 alias bctl='brightnessctl'
 alias clip='cliphist list | fzf --no-sort | cliphist decode | wl-copy'
-alias ff="fzf --preview='bat {}' | xargs nvim"
+alias ff="fzf --preview='bat --color=always {}' | xargs nvim"
 alias fd='cd $(find . -type d -print | fzf)'
 alias fc='fzf | wl-copy'
 
@@ -660,6 +660,8 @@ export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bi
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
 
 #yazi
 function y() {

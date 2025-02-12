@@ -6,7 +6,7 @@ alias ff='fastfetch'
 alias linutil='curl -fsSL https://christitus.com/linux | sh'
 alias bctl='brightnessctl'
 alias clip='cliphist list | fzf --no-sort | cliphist decode | wl-copy'
-alias ff="fzf --preview='pistol {}' | xargs nvim"
+alias ff="fzf --preview='bat --color=always {}' | xargs nvim"
 alias fd='cd $(find . -type d -print | fzf)'
 alias fc='fzf | wl-copy'
 
@@ -197,4 +197,7 @@ alias zi=__zoxide_zi
 starship init fish | source
 
 # =============================================================================
+
+# Set up fzf key bindings
+fzf --fish | source
 
