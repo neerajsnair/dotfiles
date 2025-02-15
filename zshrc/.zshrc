@@ -1,11 +1,24 @@
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/neeraj/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+#vi mode 
+#bindkey -v 
+#export KEYTIMEOUT=1
+
 #History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUPE=erase
+
+#ZSH OPTIONS
 setopt appendhistory
 setopt sharehistory
 setopt hist_ignore_space
@@ -13,6 +26,7 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+setopt autocd
 
 #completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
