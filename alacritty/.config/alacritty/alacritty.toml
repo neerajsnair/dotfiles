@@ -54,5 +54,3 @@ import = [
   "~/.config/alacritty/keybinds.toml",
   #"~/.cache/wal/colors-alacritty.toml"
 ]
-
-[terminal]
