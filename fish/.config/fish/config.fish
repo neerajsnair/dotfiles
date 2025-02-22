@@ -10,6 +10,11 @@ alias ff="fzf --preview='bat --color=always {}' | xargs nvim"
 alias fd='cd $(find . -type d -print | fzf)'
 alias fc='fzf | wl-copy'
 
+#pacman alias
+alias ins="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
+alias rem="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
+
+
 # Set the default editor
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -47,23 +52,26 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 # Alias's for multiple directory listing commands
-alias la='ls -Alh'                # show hidden files
-alias ls='ls -aFh --color=always' # add colors and file type extensions
-alias lx='ls -lXBh'               # sort by extension
-alias lk='ls -lSrh'               # sort by size
-alias lc='ls -ltcrh'              # sort by change time
-alias lu='ls -lturh'              # sort by access time
-alias lr='ls -lRh'                # recursive ls
-alias lt='ls -ltrh'               # sort by date
-alias lm='ls -alh |more'          # pipe through 'more'
-alias lw='ls -xAh'                # wide listing format
-alias ll='ls -Fls'                # long listing format
-alias labc='ls -lap'              # alphabetical sort
-alias lf="ls -l | egrep -v '^d'"  # files only
-alias ldir="ls -l | egrep '^d'"   # directories only
-alias lla='ls -Al'                # List and Hidden Files
-alias las='ls -A'                 # Hidden Files
-alias lls='ls -l'                 # List
+alias ls='eza --icons --color=always --hyperlink --group-directories-first -aF'
+alias ll='eza --icons --color=always --hyperlink --group-directories-first -alF'
+
+#alias la='ls -Alh'                # show hidden files
+#alias ls='ls -aFh --color=always' # add colors and file type extensions
+#alias lx='ls -lXBh'               # sort by extension
+#alias lk='ls -lSrh'               # sort by size
+#alias lc='ls -ltcrh'              # sort by change time
+#alias lu='ls -lturh'              # sort by access time
+#alias lr='ls -lRh'                # recursive ls
+#alias lt='ls -ltrh'               # sort by date
+#alias lm='ls -alh |more'          # pipe through 'more'
+#alias lw='ls -xAh'                # wide listing format
+#alias ll='ls -Fls'                # long listing format
+#alias labc='ls -lap'              # alphabetical sort
+#alias lf="ls -l | grep -vE '^d'"  # files only
+#alias ldir="ls -l | grep  -E '^d'"   # directories only
+#lias lla='ls -Al'                # List and Hidden Files
+#lias las='ls -A'                 # Hidden Files
+#lias lls='ls -l'                 # List
 
 # alias chmod commands
 alias mx='chmod a+x'
