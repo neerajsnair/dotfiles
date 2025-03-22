@@ -9,10 +9,11 @@ alias clip='cliphist list | fzf --no-sort | cliphist decode | wl-copy'
 alias ff="fzf --preview='bat --color=always {}' | xargs -r nvim"
 alias fd='cd $(find . -type d -print | fzf)'
 alias fc='fzf | wl-copy'
+alias fkill="ps aux | fzf | awk '{print $2}' | xargs kill"
 
 #pacman alias
 alias ins="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
-alias rem="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
+alias rem="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rs"
 
 
 # Set the default editor
