@@ -6,7 +6,7 @@ alias sdn='shutdown now'
 alias linutil='curl -fsSL https://christitus.com/linux | sh'
 alias bctl='brightnessctl'
 alias clip='cliphist list | fzf --no-sort | cliphist decode | wl-copy'
-alias ff="fzf --preview='bat --color=always {}' | xargs nvim"
+alias ff="fzf --preview='bat --color=always {}' | xargs -r nvim"
 alias fd='cd $(find . -type d -print | fzf)'
 alias fc='fzf | wl-copy'
 
