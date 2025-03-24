@@ -9,7 +9,7 @@
 
 #THEME & COLORS
     theme = catppuccin-mocha
-    #background = #020819
+    #background = #020819    #141416
     background-opacity = 0.9
 
 #WINDOW
