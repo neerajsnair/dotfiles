@@ -25,7 +25,7 @@ window#waybar.hidden {
 	padding-right: 10px;
 	transition: none;
 	color: @mauve;
-	background: @base;
+	background: transparent;
 	font-family: MesloLGS Nerd Font Mono;
 	font-weight: bold;
 }
@@ -35,7 +35,7 @@ window#waybar.hidden {
 	margin-left: 0px;
 	font-size: 4px;
 	/*border: 1px solid @color6;*/
-	background: @base;
+	background: transparent;
 }
 
 #workspaces button {
@@ -96,7 +96,7 @@ window#waybar.hidden {
 	padding-right: 8px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @base;
+	background: transparent;
 	opacity: 1.0;
 }
 
@@ -107,7 +107,7 @@ window#waybar.hidden {
 	padding-right: 4px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @base;
+	background: transparent;
 	opacity: 1.0;
 	}
 
@@ -119,7 +119,7 @@ window#waybar.hidden {
 	font-size: 17px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @base;
+	background: transparent;
 	opacity: 1.0;
 	}
 
@@ -130,7 +130,7 @@ window#waybar.hidden {
 	padding-right: 0px;
 	transition: none;
 	color: @blue;
-	background: @base;
+	background: transparent;
 	opacity: 1.0;
 	}
 
@@ -159,7 +159,7 @@ window#waybar.hidden {
 	font-size: 16px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @base;
+	background: transparent;
 	opacity: 1.0;
 	}
 
@@ -171,17 +171,17 @@ window#waybar.hidden {
 	font-size: 16px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @base;
+	background: transparent;
 	opacity: 1.0;
 }
 
 #battery.charging, #battery.plugged {
 	color: @green;
-	background-color: @base;
+	background-color: transparent;
 }
 
 #battery.critical:not(.charging) {
-	background-color: @base;
+	background-color: transparent;
 	color: #D6405C;
 	animation-name: blink;
 	animation-duration: 0.5s;
@@ -191,13 +191,13 @@ window#waybar.hidden {
 }
 
 #battery.warning:not(.charging) {
-	background-color: @base;
+	background-color: transparent;
 	color: #DB9763;
 }
 
 @keyframes slideIn {
 	from {
-	  background: @base;
+	  background: transparent;
       color: @color6; 
 	}
 	to {
@@ -213,7 +213,7 @@ window#waybar.hidden {
 	padding-right: 6px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @base;
+	background: transparent;
 	opacity: 1.0;
 }
 
@@ -225,7 +225,7 @@ window#waybar.hidden {
 	padding-right: 13px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @base;
+	background: transparent;
 }
 
 #custom-power {
@@ -237,7 +237,7 @@ window#waybar.hidden {
 	padding-right: 11px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: @base;
+	background: transparent;
 	opacity: 1.0;
 }
 
@@ -246,7 +246,7 @@ window#waybar.hidden {
 	box-shadow: inherit;
 	text-shadow: inherit;
 	color: #D6405C;
-	background: @base;
+	background: transparent;
 	/*border: 1px solid @color6;*/
 	opacity: 1.0;
 }
