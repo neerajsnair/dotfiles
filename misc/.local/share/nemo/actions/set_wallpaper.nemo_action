@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Set as Wallpaper
+Comment=Set selected image as wallpaper using swww
+Exec=swww img "%F"
+Icon=preferences-desktop-wallpaper
+Selection=any
+Extensions=png;jpg;jpeg;bmp;webp
+Quote=double
