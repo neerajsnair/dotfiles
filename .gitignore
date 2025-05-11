@@ -1,3 +1,8 @@
 waypaper/
 .directory
 misc/.local/share/applications/nemo.desktop
+misc/.local/share/applications/mimeinfo.cache
+misc/.local/share/applications/wine-extension-chm.desktop
+misc/.local/share/applications/wine-extension-hlp.desktop
+misc/.local/share/applications/wine-extension-msp.desktop
+misc/.local/share/applications/wine-extension-vbs.desktop
