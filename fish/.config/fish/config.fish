@@ -13,7 +13,7 @@ alias fkill="ps aux | fzf --multi | awk '{print $2}' | xargs kill"
 
 #pacman alias
 alias ins="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
-alias rem="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rsn"
+alias rem="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rs"
 
 
 # Set the default editor

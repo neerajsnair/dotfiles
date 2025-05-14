@@ -13,7 +13,7 @@
 window#waybar {
 	background: @base;
 	opacity: 1.0;
-  border-radius: 5px;
+	border-radius: 5px;
 }
 
 window#waybar.hidden {
@@ -55,9 +55,9 @@ window#waybar.hidden {
 #workspaces button.active {
 	transition: none;
 	background: @blue;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  border-radius: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-radius: 5px;
 	/*box-shadow: inset 0 -2px @foreground;*/
 	/*border: 1px solid @color6;*/
 	text-shadow: inherit;
@@ -67,7 +67,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active:hover {
-  color: @base;
+	color: @base;
 }
 
 #workspaces button:hover {
@@ -256,4 +256,3 @@ window#waybar.hidden {
 	/*border: 1px solid @color6;*/
 	opacity: 1.0;
 }
-
