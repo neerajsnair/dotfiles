@@ -9,111 +9,79 @@
     "display": {
         "separator": " "
     },
+    
     "modules": [
         {
             "type": "title",
-            "key": "╭─",
+            "key": "",
             "format": "{user-name}@{host-name}",
             "keyColor": "blue"
         },
         {
             "type": "os",
-            "key": "├─{icon}", // Just get your distro's logo off nerdfonts.com
-            "keyColor": "blue"
+            "key": "{icon}", // Just get your distro's logo off nerdfonts.com
+            "keyColor": "red"
         },
         {
             "type": "kernel",
-            "key": "├─",
-            "keyColor": "blue"
-        },
-        {
-            "type": "packages",
-            "key": "├─󰏖",
-            "keyColor": "blue"
-        },
-        {
-            "type": "uptime",
-            "key": "├─󰅐",
-            "keyColor": "blue"
-        },
-        {
-            "type": "localip",
-            "key": "╰─󰩟",
-            "compact": true,
-            "keyColor": "blue",
-        },
-
-        "break",
-
-
-        {
-            "type": "host",
-            "key": "╭─󰌢",
+            "key": "",
             "keyColor": "green"
         },
         {
+            "type": "host",
+            "key": "󰌢",
+            "keyColor": "yellow"
+        },
+        {
             "type": "cpu",
-            "key": "├─󰻠",
+            "key": "󰻠",
             "keyColor": "green"
         },
         {
             "type": "gpu",
-            "key": "├─󰍛",
-            "keyColor": "green"
-        },
-        {
-            "type": "disk",
-            "key": "├─",
-            "keyColor": "green"
-        },
-        {
-            "type": "memory",
-            "key": "├─󰑭",
-            "keyColor": "green"
-        },
-        {
-            "type": "swap",
-            "key": "├─󰓡",
-            "keyColor": "green"
+            "key": "󰍛",
+            "keyColor": "blue"
         },
         {
             "type": "display",
-            "key": "╰─󰍹",
-            "keyColor": "green"
+            "key": "󰍹",
+            "keyColor": "red"
         },
+
         "break",
 
-
+        {
+            "type": "wm",
+            "key": "",
+            "keyColor": "blue"
+        },
         {
             "type": "shell",
-            "key": "╭─",
+            "key": "",
             "keyColor": "yellow"
         },
         {
             "type": "terminal",
-            "key": "├─",
-            "keyColor": "yellow"
+            "key": "",
+            "keyColor": "red"
         },
         {
-            "type": "terminalfont",
-            "key": "├─",
-            "keyColor": "yellow"
+            "type": "packages",
+            "key": "󰏖",
+            "keyColor": "green"
         },
         {
-            "type": "wm",
-            "key": "├─",
-            "keyColor": "yellow"
+            "type": "uptime",
+            "key": "󰅐",
+            "keyColor": "blue"
         },
         {
-            "type": "theme",
-            "key": "├─󰉼",
+            "type": "localip",
+            "key": "󰩟",
+            "compact": true,
             "keyColor": "yellow"
-        },
-        {
-            "type": "icons",
-            "key": "╰─󰀻",
-            "keyColor": "yellow"
-        },
+        }
+
 
     ]
 }
