@@ -1,7 +1,7 @@
 * {
   all: unset;
   font-size: 14px;
-  font-family: "Ubuntu Nerd Font";
+  font-family: "Jetbrains Mono Nerd Font";
   transition: 200ms;
 }
 
@@ -22,7 +22,7 @@ slider {
 
 .floating-notifications.background .notification-row .notification-background {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #313244;
-  border-radius: 12.6px;
+  border-radius: 7px;
   margin: 18px;
   background-color: #1e1e2e;
   color: #cdd6f4;
@@ -31,7 +31,7 @@ slider {
 
 .floating-notifications.background .notification-row .notification-background .notification {
   padding: 7px;
-  border-radius: 12.6px;
+  border-radius: 7px;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification.critical {
@@ -81,7 +81,7 @@ slider {
 .floating-notifications.background .notification-row .notification-background .close-button {
   margin: 7px;
   padding: 2px;
-  border-radius: 6.3px;
+  border-radius: 7px;
   color: #1e1e2e;
   background-color: #f38ba8;
 }
@@ -98,7 +98,7 @@ slider {
 
 .control-center {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #313244;
-  border-radius: 12.6px;
+  border-radius: 7px;
   margin: 18px;
   background-color: #1e1e2e;
   color: #cdd6f4;
@@ -190,13 +190,13 @@ slider {
 .control-center .notification-row .notification-background .close-button {
   margin: 7px;
   padding: 2px;
-  border-radius: 6.3px;
+  border-radius: 7px;
   color: #1e1e2e;
   background-color: #eba0ac;
 }
 
 .close-button {
-  border-radius: 6.3px;
+  border-radius: 7px;
 }
 
 .control-center .notification-row .notification-background .close-button:hover {
@@ -232,7 +232,7 @@ slider {
 
 .control-center-dnd {
   margin-top: 5px;
-  border-radius: 8px;
+  border-radius: 7px;
   background: #313244;
   border: 1px solid #45475a;
   box-shadow: none;
@@ -244,7 +244,7 @@ slider {
 
 .control-center-dnd slider {
   background: #45475a;
-  border-radius: 8px;
+  border-radius: 7px;
 }
 
 .widget-dnd {
@@ -254,7 +254,7 @@ slider {
 
 .widget-dnd > switch {
   font-size: initial;
-  border-radius: 8px;
+  border-radius: 7px;
   background: #313244;
   border: 1px solid #45475a;
   box-shadow: none;
@@ -266,13 +266,16 @@ slider {
 
 .widget-dnd > switch slider {
   background: #45475a;
-  border-radius: 8px;
+  border-radius: 7px;
   border: 1px solid #6c7086;
 }
 
 .widget-mpris .widget-mpris-player {
   background: #313244;
   padding: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 7px;
 }
 
 .widget-mpris .widget-mpris-title {
