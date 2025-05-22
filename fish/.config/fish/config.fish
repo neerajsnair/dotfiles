@@ -7,7 +7,6 @@ alias linutil='curl -fsSL https://christitus.com/linux | sh'
 alias bctl='brightnessctl'
 alias clip='cliphist list | fzf --no-sort | cliphist decode | wl-copy'
 alias ff="fzf --multi --preview='bat --color=always {}' | xargs -r nvim"
-alias fd='cd $(find . -type d -print | fzf)'
 alias fc='fzf | wl-copy'
 alias fkill="ps aux | fzf --multi | awk '{print $2}' | xargs kill"
 
