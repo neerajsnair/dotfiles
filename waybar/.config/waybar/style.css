@@ -229,7 +229,7 @@ window#waybar.hidden {
   border-radius: 5px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: grey;
+	background: #303446;
 	opacity: 1.0;
 }
 
