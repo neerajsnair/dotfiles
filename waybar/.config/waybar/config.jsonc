@@ -30,10 +30,10 @@
     "group/battery",
     //"battery",
     //"power-profiles-daemon",
-    //"tray",
-    "group/tray",
-    //"custom/notification",
-    "custom/power",
+    "tray",
+    //"group/tray",
+    "custom/notification"
+    //"custom/power",
     ],
 
   // Modules configuration
