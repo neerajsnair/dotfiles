@@ -9,7 +9,7 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run";
+	modi:                       "drun,run,power-menu:rofi-power-menu";
     show-icons:                 false;
     display-drun:               "";
     display-run:                "";
