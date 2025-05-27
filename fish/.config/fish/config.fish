@@ -20,7 +20,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="kitty"
 export BROWSER="chromium"
-export VIDEO="vlc"
+export VIDEO="mpv"
 export IMAGE="loupe"
 export OPENER="xdg-open"
 
