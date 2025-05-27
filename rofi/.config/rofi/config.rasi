@@ -7,8 +7,8 @@ configuration{
     location: 0;
     disable-history: false;
     hide-scrollbar: true;
-    display-combi: "All ";
-    display-run: "Run ";
+    display-combi: "All";
+    display-run: "Run";
     display-window: "Window";
     display-emoji: "Emoji";
     display-drun: "Apps";
