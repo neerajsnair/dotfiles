@@ -169,7 +169,7 @@ window#waybar.hidden {
 	margin-top: 3px;
 	margin-left: 0px;
 	padding-left: 6px;
-	padding-right: 14px;
+	padding-right: 6px;
 	font-size: 16px;
 	/*border: 1px solid @color6;*/
 	transition: none;
