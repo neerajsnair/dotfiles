@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Emoji selector
+Comment=rofi emoji selector
+Exec=rofi -modi emoji -show emoji
+Icon=~/.icons/emoji.png
+Terminal=false
+Type=Application

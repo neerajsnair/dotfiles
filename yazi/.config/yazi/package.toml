@@ -1,0 +1,39 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "71c4fc2"
+hash = "a61bb2d21a08bf1d18f0a549e5eb1475"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "6fde3b2"
+hash = "7ddb7a790746fd91ecdd0350cc5a5d8c"
+
+[[plugin.deps]]
+use = "Lil-Dank/lazygit"
+rev = "7a08a09"
+hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:dracula"
+rev = "657aaf3"
+hash = "b11081c23ae0fc647b2e70fcbb74f25"
+
+[[flavor.deps]]
+use = "bennyyip/gruvbox-dark"
+rev = "91fdfa7"
+hash = "f48f510e5505f5d01e79c4f8257ec5cb"
+
+[[flavor.deps]]
+use = "dangooddd/kanagawa"
+rev = "31167ed"
+hash = "a04e157148549bacbb2831aab0e6e8cb"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-latte"
+rev = "657aaf3"
+hash = "507c3f53b34c15f1f3984315cc96bcd5"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "657aaf3"
+hash = "662a1b35b98668d4f75746eb37af7fd"

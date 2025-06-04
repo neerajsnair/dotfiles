@@ -1,0 +1,235 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top",
+  //"position": "bottom",
+  "spacing": 4,
+  //"margin-top": 3,
+  //"margin-left": 3,
+  //"margin-right": 3,
+
+  // Choose the order of the modules
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces",
+    "wlr/taskbar"
+    //"hyprland/window"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "idle_inhibitor",
+    "custom/updates",
+    "pulseaudio",
+    //"network",
+    "backlight",
+    "group/battery",
+    //"battery",
+    //"power-profiles-daemon",
+    "tray",
+    //"group/tray",
+    "custom/notification"
+    //"custom/power",
+    ],
+
+  // Modules configuration
+
+  "custom/launcher":{
+    "format" : "",
+    "tooltip-format": "App Menu",
+    "on-click":"pkill rofi || rofi -show drun",
+    "escape": true,
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "rotate": 0,
+    "icon-size": 18,
+    "icon-theme": "Papirus-Dark",
+    "spacing": 0,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-right": "maximize",
+    "on-click-middle": "close",
+    "ignore-list": [
+        "virt-manager",
+        "com.mitchellh.ghostty"
+    ],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    }
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-scroll-up": "hyprctl dispatch workspace r-1",
+    "on-scroll-down": "hyprctl dispatch workspace r+1",
+    "all-outputs": false,
+    "persistent-workspaces": {
+    "*": 5,
+    }
+  },
+
+  "clock": {
+    "format": " {:%H:%M}",
+    // "timezone": "America/New_York",
+    "tooltip-format": "<tt><big>{calendar}</big></tt>",
+    "format-alt": " {:%a %d-%m-%Y}"
+  },
+
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "{icon} {percent}%",
+    "scroll-step": 5,
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "tooltip-format": "Brightness"
+  },
+
+  "group/battery": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "click-to-reveal": false,
+      "children-class": "not-power",
+      "transition-left-to-right": true,
+    },
+
+    "modules": [
+      "battery",
+      "power-profiles-daemon"
+    ]
+  },
+
+  "battery": {
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+
+    "format": "{icon} {capacity}%",
+    "format-full": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-critical": "󰂃 {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "interval": 1
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "<span color='#f38ba8'>󰠠</span>",
+      "performance": "<span color='#f38ba8'>󰠠</span>",
+      "balanced": "<span color='#f9e2af'>󰗑</span>",
+      "power-saver":"<span color='#a6e3a1'>󰌪</span>"
+    }
+  },
+
+  "network": {
+    "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ipaddr}/{cidr} ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+
+  "pulseaudio": {
+    "tooltip-format": "Volume Control",
+    "scroll-step": 5,
+    "format": "{icon} {volume}%",
+    "format-muted": "  Muted",
+    "on-click":"wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right":"pkill pavucontrol || pavucontrol",
+    "format-icons": {
+    "default": ["", "", " "],
+    }
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰈈",
+      "deactivated": "󰈉"
+    }
+  },
+
+  "custom/updates": {
+    "format": " {}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/.config/scripts/updates.sh",
+    "interval": 1800,
+    "on-double-click": "kitty -e pacseek -ui"
+  },
+
+  "custom/power": {
+    "format" : "",
+    "tooltip-format": "Power Menu",
+    "on-click":"wlogout",
+  },
+
+  "group/battery": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "click-to-reveal": false,
+      "children-class": "not-power",
+      "transition-left-to-right": true,
+    },
+
+    "modules": [
+      "battery",
+      "power-profiles-daemon"
+    ]
+  },
+
+  "group/tray": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "click-to-reveal": false,
+      "children-class": "not-power",
+      "transition-left-to-right": false,
+    },
+
+    "modules": [
+      "custom/notification",
+      "tray"
+    ]
+  },
+
+  "custom/notification": {
+    "tooltip-format": "Notifications",
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "",
+      "none": "",
+      "dnd-notification": "",
+      "dnd-none": "",
+      "inhibited-notification": "",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "",
+      "dnd-inhibited-none": ""
+    },
+
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10,
+  }
+
+}

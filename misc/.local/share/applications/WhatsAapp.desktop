@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=WhatsApp
+Comment=Messaging App
+Exec=chromium --incognito --app=https://web.whatsapp.com
+Icon=~/.icons/whatsapp.svg
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=Whatsapp

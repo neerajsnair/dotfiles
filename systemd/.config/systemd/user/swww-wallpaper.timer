@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for swww-wallpaper.service
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=15min
+Unit=swww-wallpaper.service
+
+[Install]
+WantedBy=default.target

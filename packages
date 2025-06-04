@@ -1,0 +1,31 @@
+xorg-xhost (extremely important. apps that need elevated privileges wont launch from gui)
+tldr
+zoxide (extremely useful)
+trash-cli
+bash-completion
+btop
+ranger
+yazi, better than ranger
+networkmanager, network-manager-applet (command is nm-applet, visible in 'tray' area of waybar)
+nwg-look (gtk theming)
+libmtp, gvfs
+bluez, bluez-utils (bluetooth)
+thunar,  tumbler (for image preview), (also download plugins + unarchiver)
+nautilus
+ffmpegthumbnailer (generate vedio thumbnails)
+kitty
+kvantum, qt5ct, qt6ct, kvantum-qt5, qt5-wayland, qt6-wayland (qt theming)
+loupe (image viewer)
+Bibata-Modern-Classic  (cursor, place it in $HOME/.local/share/icons   or  $HOME/.icons)
+papirus-icon-theme (available in repos and aur)
+hyprshot (screenshot)
+hyprpicker
+hyprgui (config editor for hyprland)
+swaync, libnotify (autostart swaync as it is a daemon)
+stow
+python-pywal16 (aur)
+waypaper (frontend for swww, hyprpaper etc [aur])
+power-profiles-daemon
+
+
+

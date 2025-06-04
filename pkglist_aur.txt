@@ -1,0 +1,9 @@
+bluetuith-bin
+hyprshot-git
+libre-menu-editor
+localsend-bin
+pacseek-bin
+paru-bin
+pistol-bin
+python-pywal16
+waypaper

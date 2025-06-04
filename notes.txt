@@ -1,0 +1,25 @@
+===============================================================================
+OPEN IN TERMINAL
+
+add this to the kdeglobals file in /home to get "open in terminal" working in dolphin
+
+[General]
+TerminalApplication=alacritty
+TerminalService=Alacritty
+
+for kitty, use small letters in both entries
+
+"misc" also contains files to get this feature working in nemo and thunar
+
+===============================================================================
+Rofi Power Menu
+
+(https://github.com/jluttine/rofi-power-menu)
+
+copy the rofi-power-menu file in the dotfiles folder to /usr/bin. the power menu can be invoked by the following command
+
+        rofi -show power-menu -modi power-menu:rofi-power-menu
+
+or use the powermenu.sh in the scripts folder.
+
+===============================================================================

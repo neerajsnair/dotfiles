@@ -1,0 +1,31 @@
+
+#SHELL
+    command = /bin/fish
+    shell-integration = fish
+
+#FONT
+    font-family = MesloLGS Nerd Font Mono
+    font-size = 13
+
+#THEME & COLORS
+    theme = catppuccin-mocha
+    #background = #020819    #141416
+    background-opacity = 0.9
+
+#WINDOW
+    window-decoration = false
+    window-theme = ghostty
+    gtk-wide-tabs = true
+    adw-toolbar-style = flat
+    confirm-close-surface = false
+    window-save-state = always
+
+#KEYBINDINGS
+
+    keybind = alt+t=toggle_window_decorations
+
+    #SPLITS
+    keybind = alt+h=new_split:left
+    keybind = alt+l=new_split:right
+    keybind = alt+k=new_split:up
+    keybind = alt+j=new_split:down
