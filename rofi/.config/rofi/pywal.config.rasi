@@ -1,4 +1,4 @@
-@import "/home/neeraj/.cache/wal/colors-rofi-dark.rasi"
+@import "$HOME/.cache/wal/colors-rofi-dark.rasi"
 * {
     font: "Figtree 13";
     b-color: #000000FF;

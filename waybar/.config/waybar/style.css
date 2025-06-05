@@ -1,5 +1,5 @@
 /*color import from pywal*/
-@import '/home/neeraj/.config/waybar/mocha.css';
+@import 'mocha.css';
 
 * {
 	border: none;

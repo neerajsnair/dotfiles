@@ -20,4 +20,4 @@ else
 fi
 
 # Set the wallpaper
-swww img "$WALLPAPER" --transition-type simple >> /home/neeraj/wallpaper.log 2>&1
+swww img "$WALLPAPER" --transition-type simple >> $HOME/wallpaper.log 2>&1
