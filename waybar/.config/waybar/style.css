@@ -1,5 +1,5 @@
 /*color import from pywal*/
-@import 'mocha.css';
+@import 'theme.css';
 
 * {
 	border: none;
@@ -11,13 +11,13 @@
 }
 
 tooltip {
-	background: @base;
+	background: @tooltip;
 	border-radius: 2px;
-	border: 1px solid @green;
+	border: 1px solid @tooltip-border;
 }
 
 window#waybar {
-	background: @base;
+	background: @window-waybar;
 	opacity: 1.0;
 	/*border-radius: 5px;*/
 }
@@ -31,7 +31,7 @@ window#waybar.hidden {
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: none;
-	color: @mauve;
+	color: @window;
 	background: transparent;
 	font-family: MesloLGS Nerd Font Mono;
 	font-weight: bold;
@@ -50,7 +50,7 @@ window#waybar.hidden {
 	padding-right: 8px;
 	padding-left: 8px;
 	transition: transform 2s ease;
-	color: @mauve;
+	color: @workspace-button;
 	background: transparent;
 	font-size: 16px;
 	/*font-weight: bold;*/
@@ -60,40 +60,40 @@ window#waybar.hidden {
 
 #workspaces button.active {
 	transition: none;
-	background: @blue;
+	background: @workspace-button-active-background;
 	margin-top: 3px;
 	margin-bottom: 3px;
 	border-radius: 3px;
 	/*box-shadow: inset 0 -2px @foreground;*/
 	/*border: 1px solid @color6;*/
 	text-shadow: inherit;
-	color: @base;
+	color: @workspace-button-active-color;
 	opacity: 1.0;
 	animation: fadeIn 5s ease-in;
 }
 
 #workspaces button.active:hover {
-	color: @base;
+	color: @workspace-button-active-hover;
 }
 
 #workspaces button:hover {
 	transition: none;
 	box-shadow: inherit;
 	text-shadow: inherit;
-	color: @red;
+	color: @workspace-button-hover;
 	opacity: 1.0;
 }
 
-#custom-updates { color: @peach}
-#pulseaudio {color: @blue}
-#backlight {color: @yellow}
-#clock {color: @red}
-#battery {color: @green}
-#power-profiles-daemon {color: @green}
-#idle_inhibitor {color: @teal}
-#custom-notification {color: @mauve}
-#custom-launcher {color: @blue}
-#custom-power {color: @red}
+#custom-updates { color: @custom-updates}
+#pulseaudio {color: @pulseaudio}
+#backlight {color: @backlight}
+#clock {color: @clock}
+#battery {color: @battery}
+#power-profiles-daemon {color: @power-profiles-daemon}
+#idle_inhibitor {color: @idle-inhibitor}
+#custom-notification {color: @custom-notification}
+#custom-launcher {color: @custom-launcher}
+#custom-power {color: @custom-power}
 
 
 #custom-updates,
@@ -155,12 +155,12 @@ window#waybar.hidden {
 }
 
 #taskbar button.active {
-	box-shadow: inset 0 -2px @mauve;
+	box-shadow: inset 0 -2px @task-active-shadow;
 	border-radius: 0px;
 	}
 
 #taskbar button.maximized {
-	box-shadow: inset 0 -2px @yellow;
+	box-shadow: inset 0 -2px @task-max-shadow;
 	border-radius: 0px;
 	}
 
@@ -190,7 +190,7 @@ window#waybar.hidden {
 }
 
 #battery.charging, #battery.plugged {
-	color: @green;
+	color: @battery-charging;
 	background-color: transparent;
 }
 
@@ -228,7 +228,7 @@ window#waybar.hidden {
 	border-radius: 3px;
 	/*border: 1px solid @color6;*/
 	transition: none;
-	background: #303446;
+	background: @tray;
 	opacity: 1.0;
 }
 

@@ -1,0 +1,24 @@
+@define-color tooltip @base;
+@define-color tooltip-border @green;
+@define-color window-waybar @base;
+@define-color window @mauve;
+@define-color workspace-button @mauve;
+@define-color workspace-button-active-background @blue;
+@define-color workspace-button-active-color @base;
+@define-color workspace-button-active-hover @base;
+@define-color workspace-button-hover @red;
+@define-color custom-updates @peach;
+@define-color pulseaudio @blue;
+@define-color backlight @yellow;
+@define-color clock @red;
+@define-color battery @green;
+@define-color power-profiles-daemon @green;
+@define-color idle-inhibitor @teal;
+@define-color custom-notification @mauve;
+@define-color custom-launcher @blue;
+@define-color custom-power @red;
+@define-color task-active-shadow @mauve;
+@define-color task-max-shadow @yellow;
+@define-color battery-charging @green;
+@define-color battery-critical @red;
+

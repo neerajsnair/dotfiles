@@ -123,10 +123,10 @@
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
     "format-icons": {
-      "default": "<span color='#f38ba8'>󰠠</span>",
-      "performance": "<span color='#f38ba8'>󰠠</span>",
-      "balanced": "<span color='#f9e2af'>󰗑</span>",
-      "power-saver":"<span color='#a6e3a1'>󰌪</span>"
+      "default": "󰠠",
+      "performance": "󰠠",
+      "balanced": "󰗑",
+      "power-saver":"󰌪"
     }
   },
 
