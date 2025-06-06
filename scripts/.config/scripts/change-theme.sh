@@ -14,16 +14,19 @@ declare -a options=(
 
   choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -window-title Config)
 
- # if [ "$choice" ]; then
-  #  $selection=$(printf '%s\n' "$choice")
+if [ "$choice" ]; then
+  
+  #set waybar theme
+  cp $waybar/themes/$choice.css $waybar/theme.css
 
-  #else
-   # echo "Program terminated" && exit 1
-  #fi
+  #set rofi theme
+  cp $rofi/themes/$choice.rasi $rofi/config.rasi
 
-#set theme
-cp $waybar/themes/$choice.css $waybar/theme.css
+  #reload waybar
+  killall -q waybar
+  exec env GTK_THEME=Dracula waybar & disown
 
-#reload waybar
-killall -q waybar
-exec env GTK_THEME=Dracula waybar & disown
+else
+    echo "Program terminated" && exit 1
+fi
+
