@@ -1,9 +1,11 @@
 #/bin/bash
 #
-waybar="$HOME/.config/waybar"
 hypr="$HOME/.config/hypr"
-swaync="$HOME/.config/swaync"
+kitty="$HOME/.config/kitty"
 rofi="$HOME/.config/rofi"
+swaync="$HOME/.config/swaync"
+waybar="$HOME/.config/waybar"
+yazi="$HOME/.config/yazi"
 
 
 declare -a options=(
@@ -21,6 +23,12 @@ if [ "$choice" ]; then
 
   #set rofi theme
   cp $rofi/themes/$choice.rasi $rofi/config.rasi
+
+  #set kitty theme
+  cp $kitty/themes/$choice.conf $kitty/theme.conf
+
+  #set yazi theme
+  cp $yazi/themes/$choice.toml $yazi/theme.toml
 
   #reload waybar
   killall -q waybar
