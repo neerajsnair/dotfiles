@@ -12,7 +12,10 @@ declare -a options=(
   "Catppuccin"
   "Dracula"
   "Gruvbox"
-   )
+  "Everforest"
+  "Tokyonight"
+  "Nightfox"
+  )
 
   choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -window-title Config)
 
@@ -48,11 +51,26 @@ else
     echo "Program terminated" && exit 1
 fi
 
+#set icons
 if [ "$choice" = "Catppuccin" ]; then
-    papirus-folders -C blue --theme Papirus-Dark
+    #papirus-folders -C blue --theme Papirus-Dark
+    gsettings set org.gnome.desktop.interface icon-theme "Catppuccin-Mocha-Alt"
 
 elif [ "$choice" = "Dracula" ]; then
-    papirus-folders -C violet --theme Papirus-Dark
+    #papirus-folders -C violet --theme Papirus-Dark
+    gsettings set org.gnome.desktop.interface icon-theme "dracula-circle"
+
+elif [ "$choice" = "Gruvbox" ]; then
+    gsettings set org.gnome.desktop.interface icon-theme "Gruvbox-Dark"
+ 
+elif [ "$choice" = "Everforest" ]; then
+    gsettings set org.gnome.desktop.interface icon-theme "Everforest-Dark"
+
+elif [ "$choice" = "Tokyonight" ]; then
+    gsettings set org.gnome.desktop.interface icon-theme "Tokyonight-Dark"
+
+elif [ "$choice" = "Nightfox" ]; then
+    gsettings set org.gnome.desktop.interface icon-theme "Duskfox-Alt-3"
 fi
 
 exit 0
