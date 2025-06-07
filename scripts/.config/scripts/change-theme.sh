@@ -22,6 +22,8 @@ if [ "$choice" ]; then
   rm -r $HOME/.config/gtk-4.0
   cp -r $HOME/.themes/$choice/gtk-4.0 $HOME/.config
   gsettings set org.gnome.desktop.interface gtk-theme "$choice"
+  flatpak override --user --env=GTK_THEME=$choice
+
 
   #set waybar theme
   cp $waybar/themes/$choice.css $waybar/theme.css
