@@ -1,5 +1,5 @@
-#!/bin/bash
-#   GTK-SETTINGS
+#!/usr/bin/env bash
+#GTK-SETTINGS
 
 # Source: https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland
 

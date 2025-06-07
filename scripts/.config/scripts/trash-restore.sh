@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # List deleted files/directories in $PWD using `fzf` and restore the selected ones.
 
 deleted="$(printf "\n" | trash-restore |

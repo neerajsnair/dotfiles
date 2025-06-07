@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # Define wallpaper paths
 MORNING="$HOME/Pictures/Wallpapers/tropic_island_morning.jpg"
 AFTERNOON="$HOME/Pictures/Wallpapers/tropic_island_day.jpg"

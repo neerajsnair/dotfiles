@@ -1,5 +1,5 @@
-#/bin/bash
-#
+#!/usr/bin/env bash
+
 declare -a options=(
   "Alacritty      - $HOME/.config/alacritty/alacritty.toml"
   "Bash           - $HOME/.bashrc"

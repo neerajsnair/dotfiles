@@ -1,5 +1,5 @@
-#/bin/bash
-#
+#!/usr/bin/env bash
+
 hypr="$HOME/.config/hypr"
 kitty="$HOME/.config/kitty"
 rofi="$HOME/.config/rofi"
@@ -17,9 +17,17 @@ declare -a options=(
   choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -window-title Config)
 
 if [ "$choice" ]; then
-  
+ 
+  #set gtk theme
+  rm -r $HOME/.config/gtk-4.0
+  cp -r $HOME/.themes/$choice/gtk-4.0 $HOME/.config
+  gsettings set org.gnome.desktop.interface gtk-theme "$choice"
+
   #set waybar theme
   cp $waybar/themes/$choice.css $waybar/theme.css
+
+  #set hyprland theme
+  cp $hypr/themes/$choice.conf $hypr/theme.conf
 
   #set rofi theme
   cp $rofi/themes/$choice.rasi $rofi/config.rasi
@@ -38,3 +46,11 @@ else
     echo "Program terminated" && exit 1
 fi
 
+if [ "$choice" = "Catppuccin" ]; then
+    papirus-folders -C blue --theme Papirus-Dark
+
+elif [ "$choice" = "Dracula" ]; then
+    papirus-folders -C violet --theme Papirus-Dark
+fi
+
+exit 0
