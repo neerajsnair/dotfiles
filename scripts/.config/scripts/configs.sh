@@ -22,7 +22,7 @@ declare -a options=(
   "Windowrules    - $HOME/.config/hypr/windowrules.conf"
    )
 
-  choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -window-title Config)
+  choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -window-title Config)
 
   if [ "$choice" ]; then
     cfg=$(printf '%s\n' "$choice" | awk '{print $3}')

@@ -17,7 +17,7 @@ declare -a options=(
   "Nightfox"
   )
 
-  choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -window-title Config)
+  choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -window-title Theme)
 
 if [ "$choice" ]; then
  
