@@ -11,6 +11,22 @@
     font: "JetBrainsMono Nerd Font 13";
 }
 
+configuration{
+    modi: "drun,run,window,emoji";
+    show-icons: true;
+    terminal: "kitty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    scrollbar: false;
+    display-combi: "All";
+    display-run: "Run";
+    display-window: "Window";
+    display-emoji: "Emoji";
+    display-drun: "Apps";
+    sidebar-mode: true;
+}
+
 element-text, element-icon , mode-switcher {
     background-color: inherit;
     text-color:       inherit;
@@ -73,7 +89,17 @@ element-icon {
     size: 25px;
 }
 
-element selected {
+element.normal.normal {
+    background-color:  @bg-col ;
+    text-color: @fg-col  ;
+}
+
+element.alternate.normal {
+    background-color:  @bg-col ;
+    text-color: @fg-col  ;
+}
+
+element.selected.normal {
     background-color:  @selected-col ;
     text-color: @fg-col2  ;
 }
@@ -107,4 +133,9 @@ textbox {
     margin: 20px 0px 0px 20px;
     text-color: @blue;
     background-color: @bg-col-light;
+}
+
+scrollbar {
+    handle-width: 0;
+    width: 0;
 }

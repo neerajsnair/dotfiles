@@ -17,12 +17,6 @@
     g-margin: 0;
 }
 
-configuration {
-    modi: "drun";
-    show-icons: true;
-    display-drun: "";
-}
-
 listview {
     columns: 1;
     lines: 7;
