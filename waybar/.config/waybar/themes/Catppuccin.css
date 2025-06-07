@@ -50,3 +50,4 @@
 @define-color battery-charging @green;
 @define-color battery-critical @red;
 @define-color tray @tray-bg;
+@define-color tray-border transparent;

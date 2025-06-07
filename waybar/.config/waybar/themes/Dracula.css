@@ -35,3 +35,4 @@
 @define-color battery-charging @yellow;
 @define-color battery-critical @red;
 @define-color tray @comment;
+@define-color tray-border transparent;
