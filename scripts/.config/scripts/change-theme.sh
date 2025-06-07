@@ -35,7 +35,7 @@ if [ "$choice" ]; then
   cp $hypr/themes/$choice.conf $hypr/theme.conf
 
   #set rofi theme
-  cp $rofi/themes/$choice.rasi $rofi/config.rasi
+  cp $rofi/themes/$choice.rasi $rofi/theme.rasi
 
   #set kitty theme
   cp $kitty/themes/$choice.conf $kitty/theme.conf
