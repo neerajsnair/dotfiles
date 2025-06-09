@@ -114,7 +114,7 @@ window#waybar.hidden {
 	margin-top: 0px;
 	margin-left: 0px;
 	padding-left: 2px;
-	padding-right: 6px;
+	padding-right: 2px;
 	/*border: 1px solid @color6;*/
 	transition: none;
 	background: transparent;
@@ -123,9 +123,9 @@ window#waybar.hidden {
 
 #power-profiles-daemon {
 	margin-top: 0px;
-	margin-left: 0px;
-	padding-left: 6px;
-	padding-right: 4px;
+	margin-right: 6px;
+	padding-left: 2px;
+	padding-right: 2px;
 	font-size: 17px;
 	/*border: 1px solid @color6;*/
 	transition: none;

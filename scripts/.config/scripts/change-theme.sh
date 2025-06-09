@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+ghostty="$HOME/.config/ghostty"
 hypr="$HOME/.config/hypr"
 kitty="$HOME/.config/kitty"
 rofi="$HOME/.config/rofi"
@@ -37,8 +38,9 @@ if [ "$choice" ]; then
   #set rofi theme
   cp $rofi/themes/$choice.rasi $rofi/theme.rasi
 
-  #set kitty theme
+  #set terminal theme
   cp $kitty/themes/$choice.conf $kitty/theme.conf
+  cp $ghostty/theme-list/$choice $ghostty/theme
 
   #set yazi theme
   cp $yazi/themes/$choice.toml $yazi/theme.toml

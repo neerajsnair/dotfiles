@@ -23,7 +23,7 @@
 @define-color power-profiles-daemon @green;
 @define-color idle-inhibitor @green;
 @define-color custom-notification @blue;
-@define-color custom-launcher @blue;
+@define-color custom-launcher @yellow;
 @define-color custom-power @red;
 @define-color task-active-shadow @yellow;
 @define-color task-max-shadow @red;

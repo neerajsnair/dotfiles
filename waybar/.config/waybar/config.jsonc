@@ -25,9 +25,9 @@
     "pulseaudio",
     //"network",
     "backlight",
-    "group/battery",
-    //"battery",
-    //"power-profiles-daemon",
+    //"group/battery",
+    "battery",
+    "power-profiles-daemon",
     "tray",
     //"group/tray",
     "custom/notification"
