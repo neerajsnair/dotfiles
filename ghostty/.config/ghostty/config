@@ -1,19 +1,20 @@
+config-file = theme
 
 #SHELL
     command = /bin/fish
     shell-integration = fish
 
 #FONT
-    font-family = MesloLGS Nerd Font Mono
+    font-family = MesloLGS Nerd Font
     font-size = 13
 
 #THEME & COLORS
-    theme = catppuccin-mocha
+    #theme = catppuccin-mocha
     #background = #020819    #141416
     background-opacity = 0.9
 
 #WINDOW
-    window-decoration = false
+    window-decoration = true
     window-theme = ghostty
     gtk-wide-tabs = true
     adw-toolbar-style = flat
