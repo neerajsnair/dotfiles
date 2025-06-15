@@ -7,7 +7,7 @@
     fg-col2: #d79921;
     grey: #8a8d93;
     width: 600;
-    font: "JetBrainsMono Nerd Font 13";
+    font: "Adwaita Sans 13";
 }
 
 configuration {
@@ -31,25 +31,25 @@ element-text, element-icon , mode-switcher {
 }
 
 
-#window {
+window {
     height: 360px;
     border: 2px;
     border-color: @border-col;
     background-color: @bg-col;
 }
 
-#mainbox {
+mainbox {
     background-color: @bg-col;
 }
 
-#inputbar {
+inputbar {
     children: [prompt,entry];
     background-color: @bg-col;
     border-radius: 5px;
     padding: 2px;
 }
 
-#prompt {
+prompt {
     background-color: @prompt;
     padding: 6px;
     text-color: @bg-col;
@@ -57,19 +57,19 @@ element-text, element-icon , mode-switcher {
     margin: 20px 0px 0px 20px;
 }
 
-#textbox-prompt-colon {
+textbox-prompt-colon {
     expand: false;
     str: ":";
 }
 
-#entry {
+entry {
     padding: 6px;
     margin: 20px 0px 0px 10px;
     text-color: @fg-col;
     background-color: @bg-col;
 }
 
-#listview {
+listview {
     border: 0px 0px 0px;
     padding: 6px 0px 0px;
     margin: 10px 0px 0px 20px;
@@ -78,38 +78,53 @@ element-text, element-icon , mode-switcher {
     background-color: @bg-col;
 }
 
-#element {
+element {
     padding: 5px;
     background-color: @bg-col;
     text-color: @fg-col  ;
 }
 
-#element-icon {
+element-icon {
     size: 25px;
 }
 
-#element.normal.normal {
+element.normal.normal {
     padding: 5px;
     background-color: @bg-col;
     text-color: @fg-col  ;
 }
 
-#element.alternate.normal {
+element.alternate.normal {
     padding: 5px;
     background-color: @bg-col;
     text-color: @fg-col  ;
 }
 
-#element.selected.normal {
+element.selected.normal {
     background-color:  transparent ;
     text-color: @fg-col2  ;
 }
 
-#mode-switcher {
+element.normal.active {
+    background-color:  @bg-col ;
+    text-color: @blue  ;
+}
+
+element.alternate.active {
+    background-color:  @bg-col ;
+    text-color: @blue  ;
+}
+
+element.selected.active {
+    background-color:  @bg-col ;
+    text-color: @red  ;
+}
+
+mode-switcher {
     spacing: 0;
   }
 
-#button {
+button {
     padding: 10px;
     background-color: @bg-col-light;
     text-color: @grey;
@@ -117,19 +132,19 @@ element-text, element-icon , mode-switcher {
     horizontal-align: 0.5;
 }
 
-#button selected {
+button selected {
   background-color: @bg-col;
   text-color: @prompt;
 }
 
-#message {
+message {
     background-color: @bg-col-light;
     margin: 2px;
     padding: 2px;
     border-radius: 5px;
 }
 
-#textbox {
+textbox {
     padding: 6px;
     margin: 20px 0px 0px 20px;
     text-color: @prompt;
