@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Convert to PDF
+Comment=Convert selected files to PDF using LibreOffice
+Exec=sh -c 'soffice --headless --convert-to pdf --outdir "%P" "%F"'
+Icon=document-save
+Extensions=doc;docx;odt;pptx;ppt;odp
+MimeTypes=application/msword;
+Selection=s
