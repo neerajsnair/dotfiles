@@ -104,8 +104,28 @@ preloaders = [
 	# Font
 	{ mime = "font/*", run = "font" },
 	{ mime = "application/vnd.ms-opentype", run = "font" },
+  
+  # Do not preload files in mounted locations:
+  # Environment variable won't work here.
+  # Using absolute path instead.
+  { name = "/run/user/1000/gvfs/**/*", run = "noop" },
+
+  # For mounted location for hard disk/drive
+  { name = "/run/media/USER_NAME/**/*", run = "noop" },
+  #... the rest of preloaders
 ]
 previewers = [
+  # Allow to preview folder.
+  { name = "*/", run = "folder", sync = true },
+  # Do not previewing files in mounted locations (uncomment to except text file):
+  # { mime = "{text/*,application/x-subrip}", run = "code" },
+  # Using absolute path.
+  { name = "/run/user/1000/gvfs/**/*", run = "noop" },
+
+  # For mounted hard disk.
+  { name = "/run/media/USER_NAME/**/*", run = "noop" },
+  #... the rest of previewers
+
 	{ name = "*/", run = "folder", sync = true },
 	# Code
 	{ mime = "text/*", run = "code" },
@@ -134,6 +154,17 @@ previewers = [
 	{ mime = "inode/empty", run = "empty" },
 	# Fallback
 	{ name = "*", run = "file" },
+]
+
+prepend_previewers = [
+	# Archive previewer
+	{ mime = "application/*zip",            run = "ouch" },
+	{ mime = "application/x-tar",           run = "ouch" },
+	{ mime = "application/x-bzip2",         run = "ouch" },
+	{ mime = "application/x-7z-compressed", run = "ouch" },
+	{ mime = "application/x-rar",           run = "ouch" },
+	{ mime = "application/x-xz",            run = "ouch" },
+	{ mime = "application/xz",              run = "ouch" },
 ]
 
 [input]
@@ -210,3 +241,4 @@ sort_translit  = false
 
 [log]
 enabled = false
+

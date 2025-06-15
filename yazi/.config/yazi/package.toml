@@ -13,6 +13,16 @@ use = "Lil-Dank/lazygit"
 rev = "7a08a09"
 hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
 
+[[plugin.deps]]
+use = "ndtoan96/ouch"
+rev = "1ee69a5"
+hash = "63679f3daf8551ff8755be38b5ced0f"
+
+[[plugin.deps]]
+use = "boydaihungst/gvfs"
+rev = "b5c1545"
+hash = "d0b2de71d498980e35cb130627276892"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:dracula"
 rev = "657aaf3"
