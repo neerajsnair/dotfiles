@@ -1,6 +1,7 @@
 // -*- mode: jsonc -*-
 {
   "layer": "top",
+  "height": 34,
   //"position": "bottom",
   "spacing": 4,
   //"margin-top": 3,
@@ -11,6 +12,7 @@
   "modules-left": [
     "custom/launcher",
     "hyprland/workspaces",
+    "niri/workspaces",
     "wlr/taskbar"
     //"hyprland/window"
   ],
@@ -71,6 +73,14 @@
     "*": 5,
     }
   },
+
+  "niri/workspaces": {
+    "format": "{icon}",
+    "on-scroll-up": "niri msg action focus-workspace-up",
+    "on-scroll-down": "niri msg action focus-workspace-down",
+    "all-outputs": false,
+  },
+
 
   "clock": {
     "format": " {:%H:%M}",
