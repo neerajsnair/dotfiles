@@ -7,7 +7,7 @@
     fg-col2: #d79921;
     grey: #8a8d93;
     width: 600;
-    font: "Adwaita Sans 13";
+    font: "JetBrains Mono Regular 13";
 }
 
 configuration {
