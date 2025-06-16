@@ -12,6 +12,7 @@ declare -a options=(
   "i3             - $HOME/.config/i3/config"
   "Keybindings    - $HOME/.config/hypr/keybindings.conf"
   "Kitty          - $HOME/.config/kitty/kitty.conf"
+  "Niri           - $HOME/.config/niri/config.kdl"
   "Polybar        - $HOME/.config/polybar/config.ini"
   "Rofi           - $HOME/.config/rofi/config.rasi"
   "Starship       - $HOME/.config/starship.toml"
