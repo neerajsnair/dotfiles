@@ -10,8 +10,8 @@
 @define-color tooltip-border @green;
 @define-color window-waybar @base;
 @define-color window @mauve;
-@define-color workspace-button @green;
-@define-color workspace-button-active-background @yellow;
+@define-color workspace-button @yellow;
+@define-color workspace-button-active-background @green;
 @define-color workspace-button-active-color @base;
 @define-color workspace-button-active-hover @base;
 @define-color workspace-button-hover @red;
@@ -23,7 +23,7 @@
 @define-color power-profiles-daemon @green;
 @define-color idle-inhibitor @green;
 @define-color custom-notification @blue;
-@define-color custom-launcher @yellow;
+@define-color custom-launcher @green;
 @define-color custom-power @red;
 @define-color task-active-shadow @yellow;
 @define-color task-max-shadow @red;
