@@ -127,8 +127,8 @@ keymap = [
 	{ on = [ "g", "w" ],       run = "cd ~/Pictures/Wallpapers/",       desc = "Go to the wallpaper directory" },
 	{ on = [ "g", "<Space>" ], run = "cd --interactive",                desc = "Go to a directory interactively" },
   
-	{ on = [ "w", "w" ],       run = "shell --confirm 'swww img $1 --transition-step 10'"},
-	{ on = [ "w", "p" ],       run = "shell --confirm 'wal -i $1'"}, 
+	{ on = [ "W", "w" ],       run = "shell --confirm 'swww img $1 --transition-step 10'", desc = "Set as wallpaper" },
+	{ on = [ "W", "p" ],       run = "shell --confirm 'wal -i $1'", desc = "Set pywal theme" }, 
 
 	# Tabs
 	{ on = "t", run = "tab_create --current", desc = "Create a new tab with CWD" },
@@ -150,7 +150,7 @@ keymap = [
 	{ on = "}", run = "tab_swap 1",  desc = "Swap current tab with next tab" },
 
 	# Tasks
-	{ on = "w", run = "tasks_show", desc = "Show task manager" },
+	{ on = "w", run = "tasks:show", desc = "Show task manager" },
 
 	# Help
 	{ on = "~",    run = "help", desc = "Open help" },
