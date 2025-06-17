@@ -56,7 +56,7 @@ keymap = [
 	# Operation
 	{ on = "o",         run = "open",                        desc = "Open selected files" },
 	{ on = "O",         run = "open --interactive",          desc = "Open selected files interactively" },
-  { on = "E",         run = "shell --confirm 'alacritty -e nvim $1'", desc = "Open with nvim in a new window"},
+  { on = "E",         run = "shell --confirm 'alacritty -e nvim $@'", desc = "Open with nvim in a new window"},
 	{ on = "<Enter>",   run = "open",                        desc = "Open selected files" },
 	{ on = "<S-Enter>", run = "open --interactive",          desc = "Open selected files interactively" },
 	{ on = "y",         run = "yank",                        desc = "Yank selected files (copy)" },
