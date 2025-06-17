@@ -11,7 +11,7 @@ config-file = theme
 #THEME & COLORS
     #theme = catppuccin-mocha
     #background = #020819    #141416
-    background-opacity = 0.9
+    background-opacity = 0.8
 
 #WINDOW
     window-decoration = true
