@@ -1,0 +1,373 @@
+// This config is in the KDL format: https://kdl.dev
+
+
+//////////////////
+//////INPUT///////
+//////////////////
+input {
+    keyboard {
+        xkb {
+            // You can set rules, model, layout, variant and options.
+            // layout "us,ru"
+            // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+        }
+
+        // Enable numlock on startup, omitting this setting disables it.
+        numlock
+    }
+
+    // Next sections include libinput settings.
+    // Omitting settings disables them, or leaves them at their default values.
+    touchpad {
+        // off
+        tap
+        // dwt
+        // dwtp
+        // drag false
+        // drag-lock
+        natural-scroll
+        accel-speed 0.0
+        accel-profile "flat"
+        // scroll-method "two-finger"
+        // disabled-on-external-mouse
+    }
+
+    mouse {
+        // off
+        // natural-scroll
+        accel-speed 0.0
+        accel-profile "flat"
+        // scroll-method "no-scroll"
+    }
+
+    trackpoint {
+        // off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "on-button-down"
+        // scroll-button 273
+        // middle-emulation
+    }
+
+    // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
+    focus-follows-mouse max-scroll-amount="50%"
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////
+///////DISPLAY////////
+//////////////////////
+
+// You can configure outputs by their name, which you can find
+// by running `niri msg outputs` while inside a niri instance.
+output "LVDS-1" {
+    mode "1366x768@59.959"
+    scale 1
+    transform "normal"   // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
+    position x=0 y=0
+}
+
+
+/////////////////////////////////
+//////ENVIRONMENT VARIABLES//////
+/////////////////////////////////
+environment {
+  QT_QPA_PLATFORM "wayland"
+  QT_QPA_PLATFORMTHEME "qt6ct"
+  QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+hotkey-overlay {
+  skip-at-startup
+}
+
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
+layout {
+    gaps 12
+    center-focused-column "never" //"never", "always", "on-overflow"
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 1.0 
+        // fixed 1920
+    }
+
+    // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+D) toggles between.
+    // preset-window-heights { }
+
+    // You can change the default width of the new windows.
+    default-column-width { proportion 0.5; }
+    // If you leave the brackets empty, the windows themselves will decide their initial width.
+    // default-column-width {}
+
+    // You can change how the focus ring looks.
+    focus-ring { 
+        width 2    //off
+
+        // Colors can be set in a variety of ways:
+        // - CSS named colors: "red"
+        // - RGB hex: "#rgb", "#rgba", "#rrggbb", "#rrggbbaa"
+        // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
+
+        active-color "#cba6f7"
+        inactive-color "#505050"
+        // active-gradient from="#80c8ff" to="#bbddff" angle=45
+        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+    }
+
+    border {
+        off
+        width 4
+        active-color "#ffc87f"
+        inactive-color "#505050"
+        urgent-color "#9b0000"
+        // active-gradient from="#ffbb66" to="#ffc880" angle=45 relative-to="workspace-view"
+        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+    }
+
+    shadow {
+        // on           // Uncomment the next line to enable shadows
+        softness 30     // Softness controls the shadow blur radius
+        spread 5        // Spread expands the shadow.
+        offset x=0 y=5  // Offset moves the shadow relative to the window
+        color "#0007"   // You can also change the shadow color and opacity.
+    }
+
+    struts {
+        // left 64
+        // right 64
+        // top 64
+        // bottom 64
+    }
+}
+
+//disable clinet side decoration
+  prefer-no-csd
+
+// Note that running niri as a session supports xdg-desktop-autostart,
+// which may be more convenient to use.
+
+
+/////////////////////////
+///////AUTOSTART/////////
+/////////////////////////
+spawn-at-startup "waybar.sh"
+spawn-at-startup "swww-daemon"
+spawn-at-startup "hypridle"
+spawn-at-startup "swaync"
+spawn-at-startup "ghostty.sh"
+spawn-at-startup "clipboard.sh"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// You can change the path where screenshots are saved.
+// A ~ at the front will be expanded to the home directory.
+// The path is formatted with strftime(3) to give you the screenshot date and time.
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+// screenshot-path null //disable saving screenshots to disk.
+
+
+////////////////////////////
+/////////ANIMATIONS/////////
+////////////////////////////
+animations {
+    // off
+    // Slow down all animations by this factor. Values below 1 speed them up instead.
+    // slowdown 3.0
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////
+//////////WINDOW RULES///////
+/////////////////////////////
+
+window-rule {
+    match is-focused=true
+    opacity 1.0
+}
+
+window-rule {
+    // This app-id regular expression will work for both:
+    // - host Firefox (app-id is "firefox")
+    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match is-focused=true
+    draw-border-with-background false
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////
+////LAYER RULES/////
+////////////////////
+  layer-rule {
+    match namespace="swww-daemon"
+    place-within-backdrop false
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////
+//////////KEYBINDINGS////////
+/////////////////////////////
+
+binds {
+    Mod+Shift+Slash { show-hotkey-overlay; }
+
+    // Suggested binds for running programs: terminal, app launcher, screen locker.
+    Mod+Space     hotkey-overlay-title="Open a Terminal: ghostty"   {spawn "ghostty" "--gtk-single-instance=true";}
+    Alt+Space     hotkey-overlay-title="Run an Application: rofi"   {spawn "rofi" "-show" "drun";}
+    Mod+E         hotkey-overlay-title="Open File Manager: nemo"    {spawn "nemo" "--tabs" "/home/neeraj" ".config" "Downloads";}
+    Mod+B         hotkey-overlay-title="Open Web Browser: firefox"  {spawn "io.gitlab.librewolf-community";}
+    Mod+R         hotkey-overlay-title="Open TermFile: yazi"        {spawn "kitty" "-e" "yazi" "$HOME" "~/.config" "~/Downloads" "~/dotfiles"; }
+    Mod+W         hotkey-overlay-title="Change Wallpaper: waypaper" {spawn "waypaper";}
+    Super+Ctrl+L  hotkey-overlay-title="Lock the Screen: hyprlock"  {spawn "loginctl" "lock-session";}
+    Ctrl+Escape   hotkey-overlay-title="Power Menu: wlogout"        {spawn "wlogout";}
+    Mod+Ctrl+K    hotkey-overlay-title="Config Files"               {spawn "sh" "-c" "$HOME/.config/scripts/configs.sh";}
+    Ctrl+Shift+T  hotkey-overlay-title="Change Theme"               {spawn "sh" "-c" "$HOME/.config/scripts/change-theme.sh";}
+    Mod+Shift+V   hotkey-overlay-title="Clipboard"                  {spawn "clipboard-spawn.sh";}
+
+    // You can also use a shell. Do this if you need pipes, multiple commands, etc.
+    // Note: the entire command goes as a single argument in the end.
+    // Mod+T { spawn "bash" "-c" "notify-send hello && exec alacritty"; }
+
+
+    
+    Mod+Tab repeat=false              { toggle-overview; }   //4 finger swipe, the top-left hot corner
+    Mod+Q                             { close-window; }
+    Ctrl+Alt+Delete                   { quit; }
+    Mod+Shift+P                       { power-off-monitors; }
+    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+
+    ///////SCREENSHOT//////
+    Print       { screenshot; }
+    Ctrl+Print  { screenshot-screen; }
+    Alt+Print   { screenshot-window; }
+
+
+    ////////WINDOWS///////
+    Mod+T       { toggle-window-floating; }
+    Mod+Shift+T { switch-focus-between-floating-and-tiling; }
+
+    Mod+Left  { focus-column-left; }
+    Mod+Down  { focus-window-down; }
+    Mod+Up    { focus-window-up; }
+    Mod+Right { focus-column-right; }
+
+    Mod+Alt+WheelScrollUp   { focus-window-up; }
+    Mod+Alt+WheelScrollDown { focus-window-down; }
+
+    Mod+WheelScrollDown     { focus-column-right; }
+    Mod+WheelScrollUp       { focus-column-left; }
+    Mod+TouchpadScrollDown  { focus-column-right; }
+    Mod+TouchpadScrollUp    { focus-column-left; }
+    Mod+Shift+Right         { move-column-right; }
+    Mod+Shift+Left          { move-column-left; }
+
+    Mod+Ctrl+Left  { move-column-left; }
+    Mod+Ctrl+Down  { move-window-down; }
+    Mod+Ctrl+Up    { move-window-up; }
+    Mod+Ctrl+Right { move-column-right; }
+
+
+    //////RESIZE WINDOWS/////////
+    Mod+D         { switch-preset-column-width; }
+    Mod+Shift+D   { switch-preset-window-height; }
+    Mod+Ctrl+D    { reset-window-height; }
+    Mod+F         { maximize-column; }
+    Mod+Shift+F   { fullscreen-window; }
+    Mod+Ctrl+F    { expand-column-to-available-width; }
+    Mod+C         { center-column; }
+    Mod+Ctrl+C    { center-visible-columns; }
+
+    Mod+Minus         { set-column-width "-10%"; }  // * set width in pixels: "1000"
+    Mod+Equal         { set-column-width "+10%"; }  // * adjust width in pixels: "-5" or "+5"
+    Mod+Shift+Minus   { set-window-height "-10%"; } // * set width as a percentage of screen width: "25%"
+    Mod+Shift+Equal   { set-window-height "+10%"; } // * adjust width as a percentage of screen width: "-10%" or "+10%"
+
+
+    //////TABS//////
+    Mod+S      { toggle-column-tabbed-display; }
+    Mod+Comma  { consume-or-expel-window-left; }
+    Mod+Period { consume-or-expel-window-right; }
+
+
+    //////WORKSPACE BINDS////////
+    Mod+Page_Down      { focus-workspace-down; }
+    Mod+Page_Up        { focus-workspace-up; }
+    Mod+U              { focus-workspace-down; }
+    Mod+I              { focus-workspace-up; }
+    Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
+    Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
+    Mod+Ctrl+U         { move-column-to-workspace-down; }
+    Mod+Ctrl+I         { move-column-to-workspace-up; }
+
+    Mod+Shift+WheelScrollDown     cooldown-ms=150 { focus-workspace-down; }
+    Mod+Shift+WheelScrollUp       cooldown-ms=150 { focus-workspace-up; }
+    Mod+Ctrl+WheelScrollDown      cooldown-ms=150 { move-column-to-workspace-down; }
+    Mod+Ctrl+WheelScrollUp        cooldown-ms=150 { move-column-to-workspace-up; }
+
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+4 { focus-workspace 4; }
+    Mod+5 { focus-workspace 5; }
+    Mod+6 { focus-workspace 6; }
+    Mod+7 { focus-workspace 7; }
+    Mod+8 { focus-workspace 8; }
+    Mod+9 { focus-workspace 9; }
+
+    Mod+Shift+1 { move-column-to-workspace 1; }
+    Mod+Shift+2 { move-column-to-workspace 2; }
+    Mod+Shift+3 { move-column-to-workspace 3; }
+    Mod+Shift+4 { move-column-to-workspace 4; }
+    Mod+Shift+5 { move-column-to-workspace 5; }
+    Mod+Shift+6 { move-column-to-workspace 6; }
+    Mod+Shift+7 { move-column-to-workspace 7; }
+    Mod+Shift+8 { move-column-to-workspace 8; }
+    Mod+Shift+9 { move-column-to-workspace 9; }
+
+
+    XF86MonBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "-q" "s" "+10%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "-q" "s" "10%-"; }
+    XF86AudioRaiseVolume  allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
+    XF86AudioLowerVolume  allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
+    XF86AudioMute         allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    XF86AudioMicMute      allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+
+
+    //////MULTIPLE MONITORS//////
+    //Mod+Shift+Left  { focus-monitor-left; }
+    //Mod+Shift+Down  { focus-monitor-down; }
+    //Mod+Shift+Up    { focus-monitor-up; }
+    //Mod+Shift+Right { focus-monitor-right; }
+    //Mod+Shift+H     { focus-monitor-left; }
+    //Mod+Shift+J     { focus-monitor-down; }
+    //Mod+Shift+K     { focus-monitor-up; }
+    //Mod+Shift+L     { focus-monitor-right; }
+
+    //Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }    // these commands can be used to move windows as well
+    //Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
+    //Mod+Shift+Ctrl+Up    { move-column-to-monitor-up; }
+    //Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
+    //Mod+Shift+Ctrl+H     { move-column-to-monitor-left; }
+    //Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
+    //Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
+    //Mod+Shift+Ctrl+L     { move-column-to-monitor-right; } 
+
+    // Alternatively, there are commands to move just a single window:
+    // Mod+Shift+Ctrl+Left  { move-window-to-monitor-left; }
+    // And you can also move a whole workspace to another monitor:
+    // Mod+Shift+Ctrl+Left  { move-workspace-to-monitor-left; }
+}
+
+
