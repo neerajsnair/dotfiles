@@ -8,6 +8,10 @@ return {
   },
 
   {
+    "hrsh7th/cmp-path",
+  },
+
+  {
     "L3MON4D3/LuaSnip",
     dependencies = {
       "saadparwaiz1/cmp_luasnip",
@@ -48,6 +52,7 @@ return {
           { name = "buffer" },   --completions from the buffer
           { name = "nvim_lsp" }, -- Completions from lsp
           { name = "luasnip" },  -- For luasnip users.
+          { name = "path" },
         }),
       })
     end,
