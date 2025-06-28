@@ -9,4 +9,5 @@ misc/.local/share/applications/wine-extension-vbs.desktop
 misc/.local/share/applications/fedorabox.desktop
 misc/.local/share/applications/archbox.desktop
 misc/.local/share/applications/ubuntubox.desktop
+nvim/.config/nvim/lazy-lock.json
 **/theme.*
