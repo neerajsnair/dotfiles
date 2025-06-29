@@ -176,7 +176,7 @@
     "return-type": "json",
     "exec": "~/.config/scripts/updates.sh",
     "interval": 1800,
-    "on-double-click": "kitty -e pacseek -ui"
+    // "on-double-click": "kitty -e pacseek -ui"
   },
 
   "custom/power": {

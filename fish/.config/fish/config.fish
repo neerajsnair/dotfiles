@@ -9,9 +9,6 @@ alias clip='cliphist list | fzf --no-sort | cliphist decode | wl-copy'
 alias ff="fzf --multi --preview='bat --color=always {}' | xargs -r nvim"
 alias fc='fzf | wl-copy'
 alias fkill="ps aux | fzf --multi | awk '{print $2}' | xargs kill"
-alias amnt='jmtpfs ~/android'
-alias aumnt='fusermount -u ~/android'
-
 
 #pacman alias
 alias ins="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
