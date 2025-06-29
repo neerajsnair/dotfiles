@@ -9,6 +9,7 @@ alias clip='cliphist list | fzf --no-sort | cliphist decode | wl-copy'
 alias ff="fzf --multi --preview='bat --color=always {}' | xargs -r nvim"
 alias fc='fzf | wl-copy'
 alias fkill="ps aux | fzf --multi | awk '{print $2}' | xargs kill"
+alias hist-prune='history | fzf | read --line cmd; and history delete --exact --case-sensitive "$cmd"'
 
 #pacman alias
 alias ins="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
