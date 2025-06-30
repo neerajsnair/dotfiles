@@ -15,4 +15,4 @@ vim.opt.undofile = true
 vim.opt.undodir = undodir
 
 -- Theme
-vim.cmd.colorscheme "tokyonight" 
+-- vim.cmd.colorscheme "tokyonight"
