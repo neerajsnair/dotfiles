@@ -3,6 +3,7 @@ return{
   priority = 1000,
   lazy = false,
   keys = {
+    { "<leader>fd", function() Snacks.dashboard() end, desc = "Dashboard" },
     -- Top Pickers & Explorer
     { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
     { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },
@@ -71,7 +72,8 @@ return{
     explorer = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },
-    picker = { enabled = true,
+    picker = { 
+      enabled = true,
       sources = {
         files = {
           hidden = true,
@@ -80,6 +82,10 @@ return{
           hidden = true,
         }
       }
+    },
+    matcher = {
+      enabled = true,
+      frecency= true 
     },
     notifier = { enabled = true },
     quickfile = { enabled = true },
